@@ -1,0 +1,656 @@
+{
+    "mode": "typescript",
+    "packageName": "office-ui-fabric-react",
+    "rootFiles": [
+        "node_modules/office-ui-fabric-react/lib/index.d.ts"
+    ],
+    "ignore": [
+        "**/node_modules/**",
+        "**/stories/**",
+        "**/__mocks__/**",
+        "**/__examples__/**",
+        "**/__tests__/**",
+        "**/__docs__/**",
+        "**/*.test.{js,jsx}",
+        "**/*-test.{js,jsx}",
+        "**/*.spec.{js,jsx}",
+        "**/*-spec.{js,jsx}"
+    ],
+    "additionalImports": [],
+    "out": "fluent-ui.framerfx/code",
+    "components": {
+        "GroupSpacer": {
+            "ignore": false
+        },
+        "MarqueeSelection": {
+            "ignore": false
+        },
+        "ShimmeredDetailsList": {
+            "ignore": false
+        },
+        "ShimmeredDetailsListBase": {
+            "ignore": false
+        },
+        "ActivityItem": {
+            "ignore": false
+        },
+        "Autofill": {
+            "ignore": false
+        },
+        "Announced": {
+            "ignore": false
+        },
+        "AnnouncedBase": {
+            "ignore": false
+        },
+        "Breadcrumb": {
+            "ignore": false
+        },
+        "BreadcrumbBase": {
+            "ignore": false
+        },
+        "BaseButton": {
+            "ignore": false
+        },
+        "Button": {
+            "ignore": false
+        },
+        "ActionButton": {
+            "ignore": false
+        },
+        "CommandBarButton": {
+            "ignore": false
+        },
+        "CompoundButton": {
+            "ignore": false
+        },
+        "DefaultButton": {
+            "ignore": false
+        },
+        "MessageBarButton": {
+            "ignore": false
+        },
+        "PrimaryButton": {
+            "ignore": false
+        },
+        "IconButton": {
+            "ignore": false
+        },
+        "ButtonGrid": {
+            "ignore": false
+        },
+        "Grid": {
+            "ignore": false
+        },
+        "ButtonGridCell": {
+            "ignore": false
+        },
+        "Calendar": {
+            "ignore": false
+        },
+        "Callout": {
+            "ignore": false
+        },
+        "CalloutContent": {
+            "ignore": false
+        },
+        "CalloutContentBase": {
+            "ignore": false
+        },
+        "FocusTrapCallout": {
+            "ignore": false
+        },
+        "Check": {
+            "ignore": false
+        },
+        "CheckBase": {
+            "ignore": false
+        },
+        "Checkbox": {
+            "ignore": false
+        },
+        "CheckboxBase": {
+            "ignore": false
+        },
+        "ChoiceGroup": {
+            "ignore": false
+        },
+        "ChoiceGroupBase": {
+            "ignore": false
+        },
+        "Coachmark": {
+            "ignore": false
+        },
+        "CoachmarkBase": {
+            "ignore": false
+        },
+        "ColorPicker": {
+            "ignore": false
+        },
+        "ColorPickerBase": {
+            "ignore": false
+        },
+        "ComboBox": {
+            "ignore": false
+        },
+        "VirtualizedComboBox": {
+            "ignore": false
+        },
+        "CommandBar": {
+            "ignore": false
+        },
+        "CommandBarBase": {
+            "ignore": false
+        },
+        "ContextualMenu": {
+            "ignore": false
+        },
+        "ContextualMenuBase": {
+            "ignore": false
+        },
+        "ContextualMenuItem": {
+            "ignore": false
+        },
+        "ContextualMenuItemBase": {
+            "ignore": false
+        },
+        "DatePicker": {
+            "ignore": false
+        },
+        "DatePickerBase": {
+            "ignore": false
+        },
+        "DetailsHeader": {
+            "ignore": false
+        },
+        "DetailsHeaderBase": {
+            "ignore": false
+        },
+        "DetailsList": {
+            "ignore": false
+        },
+        "DetailsListBase": {
+            "ignore": false
+        },
+        "DetailsRow": {
+            "ignore": false
+        },
+        "DetailsRowBase": {
+            "ignore": false
+        },
+        "DetailsRowCheck": {
+            "ignore": false
+        },
+        "DetailsRowFields": {
+            "ignore": false
+        },
+        "DetailsColumnBase": {
+            "ignore": false
+        },
+        "Dialog": {
+            "ignore": false
+        },
+        "DialogBase": {
+            "ignore": false
+        },
+        "DialogContent": {
+            "ignore": false
+        },
+        "DialogContentBase": {
+            "ignore": false
+        },
+        "DialogFooter": {
+            "ignore": false
+        },
+        "DialogFooterBase": {
+            "ignore": false
+        },
+        "VerticalDivider": {
+            "ignore": false
+        },
+        "DocumentCard": {
+            "ignore": false
+        },
+        "DocumentCardActions": {
+            "ignore": false
+        },
+        "DocumentCardActivity": {
+            "ignore": false
+        },
+        "DocumentCardDetails": {
+            "ignore": false
+        },
+        "DocumentCardLocation": {
+            "ignore": false
+        },
+        "DocumentCardPreview": {
+            "ignore": false
+        },
+        "DocumentCardImage": {
+            "ignore": false
+        },
+        "DocumentCardTitle": {
+            "ignore": false
+        },
+        "DocumentCardLogo": {
+            "ignore": false
+        },
+        "DocumentCardStatus": {
+            "ignore": false
+        },
+        "Dropdown": {
+            "ignore": false
+        },
+        "DropdownBase": {
+            "ignore": false
+        },
+        "BaseExtendedPicker": {
+            "ignore": false
+        },
+        "BaseExtendedPeoplePicker": {
+            "ignore": false
+        },
+        "Fabric": {
+            "ignore": false
+        },
+        "FabricBase": {
+            "ignore": false
+        },
+        "FacepileBase": {
+            "ignore": false
+        },
+        "Facepile": {
+            "ignore": false
+        },
+        "BaseFloatingPicker": {
+            "ignore": false
+        },
+        "BaseFloatingPeoplePicker": {
+            "ignore": false
+        },
+        "SuggestionsHeaderFooterItem": {
+            "ignore": false
+        },
+        "SuggestionsControl": {
+            "ignore": false
+        },
+        "SuggestionsCore": {
+            "ignore": false
+        },
+        "FocusTrapZone": {
+            "ignore": false
+        },
+        "GroupedList": {
+            "ignore": false
+        },
+        "GroupedListBase": {
+            "ignore": false
+        },
+        "GroupHeader": {
+            "ignore": false
+        },
+        "GroupFooter": {
+            "ignore": false
+        },
+        "GroupShowAll": {
+            "ignore": false
+        },
+        "GroupedListSection": {
+            "ignore": false
+        },
+        "HoverCard": {
+            "ignore": false
+        },
+        "HoverCardBase": {
+            "ignore": false
+        },
+        "ExpandingCard": {
+            "ignore": false
+        },
+        "ExpandingCardBase": {
+            "ignore": false
+        },
+        "PlainCard": {
+            "ignore": false
+        },
+        "PlainCardBase": {
+            "ignore": false
+        },
+        "Icon": {
+            "ignore": false
+        },
+        "IconBase": {
+            "ignore": false
+        },
+        "FontIcon": {
+            "ignore": false
+        },
+        "ImageIcon": {
+            "ignore": false
+        },
+        "Image": {
+            "ignore": false
+        },
+        "ImageBase": {
+            "ignore": false
+        },
+        "Keytip": {
+            "ignore": false
+        },
+        "KeytipData": {
+            "ignore": false
+        },
+        "KeytipLayer": {
+            "ignore": false
+        },
+        "KeytipLayerBase": {
+            "ignore": false
+        },
+        "LabelBase": {
+            "ignore": false
+        },
+        "Label": {
+            "ignore": false
+        },
+        "Layer": {
+            "ignore": false
+        },
+        "LayerBase": {
+            "ignore": false
+        },
+        "LayerHost": {
+            "ignore": false
+        },
+        "Link": {
+            "ignore": false
+        },
+        "LinkBase": {
+            "ignore": false
+        },
+        "List": {
+            "ignore": false
+        },
+        "SelectionZone": {
+            "ignore": false
+        },
+        "MessageBar": {
+            "ignore": false
+        },
+        "MessageBarBase": {
+            "ignore": false
+        },
+        "Modal": {
+            "ignore": false
+        },
+        "ModalBase": {
+            "ignore": false
+        },
+        "Nav": {
+            "ignore": false
+        },
+        "NavBase": {
+            "ignore": false
+        },
+        "OverflowSet": {
+            "ignore": false
+        },
+        "OverflowSetBase": {
+            "ignore": false
+        },
+        "Overlay": {
+            "ignore": false
+        },
+        "OverlayBase": {
+            "ignore": false
+        },
+        "Panel": {
+            "ignore": false
+        },
+        "PanelBase": {
+            "ignore": false
+        },
+        "Persona": {
+            "ignore": false
+        },
+        "PersonaBase": {
+            "ignore": false
+        },
+        "Suggestions": {
+            "ignore": false
+        },
+        "SuggestionsItem": {
+            "ignore": false
+        },
+        "BasePicker": {
+            "ignore": false
+        },
+        "BasePickerListBelow": {
+            "ignore": false
+        },
+        "BasePeoplePicker": {
+            "ignore": false
+        },
+        "MemberListPeoplePicker": {
+            "ignore": false
+        },
+        "NormalPeoplePicker": {
+            "ignore": false
+        },
+        "CompactPeoplePicker": {
+            "ignore": false
+        },
+        "ListPeoplePicker": {
+            "ignore": false
+        },
+        "PeoplePickerItemBase": {
+            "ignore": false
+        },
+        "PeoplePickerItem": {
+            "ignore": false
+        },
+        "PeoplePickerItemSuggestionBase": {
+            "ignore": false
+        },
+        "PeoplePickerItemSuggestion": {
+            "ignore": false
+        },
+        "TagPickerBase": {
+            "ignore": false
+        },
+        "TagPicker": {
+            "ignore": false
+        },
+        "TagItemBase": {
+            "ignore": false
+        },
+        "TagItem": {
+            "ignore": false
+        },
+        "TagItemSuggestionBase": {
+            "ignore": false
+        },
+        "TagItemSuggestion": {
+            "ignore": false
+        },
+        "Pivot": {
+            "ignore": false
+        },
+        "PivotBase": {
+            "ignore": false
+        },
+        "Popup": {
+            "ignore": false
+        },
+        "PositioningContainer": {
+            "ignore": false
+        },
+        "ProgressIndicator": {
+            "ignore": false
+        },
+        "ProgressIndicatorBase": {
+            "ignore": false
+        },
+        "Rating": {
+            "ignore": false
+        },
+        "RatingBase": {
+            "ignore": false
+        },
+        "MeasuredContext": {
+            "ignore": false
+        },
+        "ResizeGroupBase": {
+            "ignore": false
+        },
+        "ScrollablePane": {
+            "ignore": false
+        },
+        "ScrollablePaneBase": {
+            "ignore": false
+        },
+        "ScrollablePaneContext": {
+            "ignore": false
+        },
+        "SearchBox": {
+            "ignore": false
+        },
+        "SearchBoxBase": {
+            "ignore": false
+        },
+        "BaseSelectedItemsList": {
+            "ignore": false
+        },
+        "BasePeopleSelectedItemsList": {
+            "ignore": false
+        },
+        "ExtendedSelectedItem": {
+            "ignore": false
+        },
+        "SeparatorBase": {
+            "ignore": false
+        },
+        "Separator": {
+            "ignore": false
+        },
+        "Shimmer": {
+            "ignore": false
+        },
+        "ShimmerBase": {
+            "ignore": false
+        },
+        "ShimmerLine": {
+            "ignore": false
+        },
+        "ShimmerLineBase": {
+            "ignore": false
+        },
+        "ShimmerCircle": {
+            "ignore": false
+        },
+        "ShimmerCircleBase": {
+            "ignore": false
+        },
+        "ShimmerGap": {
+            "ignore": false
+        },
+        "ShimmerGapBase": {
+            "ignore": false
+        },
+        "ShimmerElementsGroup": {
+            "ignore": false
+        },
+        "ShimmerElementsGroupBase": {
+            "ignore": false
+        },
+        "Slider": {
+            "ignore": false
+        },
+        "SliderBase": {
+            "ignore": false
+        },
+        "SpinButton": {
+            "ignore": false
+        },
+        "Spinner": {
+            "ignore": false
+        },
+        "SpinnerBase": {
+            "ignore": false
+        },
+        "StackItem": {
+            "ignore": false
+        },
+        "Sticky": {
+            "ignore": false
+        },
+        "SwatchColorPicker": {
+            "ignore": false
+        },
+        "SwatchColorPickerBase": {
+            "ignore": false
+        },
+        "ColorPickerGridCell": {
+            "ignore": false
+        },
+        "ColorPickerGridCellBase": {
+            "ignore": false
+        },
+        "TeachingBubble": {
+            "ignore": false
+        },
+        "TeachingBubbleBase": {
+            "ignore": false
+        },
+        "TeachingBubbleContent": {
+            "ignore": false
+        },
+        "TeachingBubbleContentBase": {
+            "ignore": false
+        },
+        "Text": {
+            "ignore": false
+        },
+        "TextView": {
+            "ignore": false
+        },
+        "TextStyles": {
+            "ignore": false
+        },
+        "TextField": {
+            "ignore": false
+        },
+        "TextFieldBase": {
+            "ignore": false
+        },
+        "MaskedTextField": {
+            "ignore": false
+        },
+        "Toggle": {
+            "ignore": false
+        },
+        "ToggleBase": {
+            "ignore": false
+        },
+        "Tooltip": {
+            "ignore": false
+        },
+        "TooltipBase": {
+            "ignore": false
+        },
+        "TooltipHost": {
+            "ignore": false
+        },
+        "TooltipHostBase": {
+            "ignore": false
+        },
+        "ChoiceGroupOption": {
+            "ignore": false
+        },
+        "PersonaCoin": {
+            "ignore": false
+        },
+        "PersonaCoinBase": {
+            "ignore": false
+        }
+    }
+}
