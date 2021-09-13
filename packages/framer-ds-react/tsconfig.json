@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "exclude": ["dist"],
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "jsx": "react-jsx"
+  }
+}
