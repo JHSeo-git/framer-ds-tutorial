@@ -27,6 +27,7 @@
   ],
   "exclude": [
     "node_modules",
-    "./tsconfig.path.json"
+    "./tsconfig.path.json",
+    "./src/framerfx",
   ]
 }

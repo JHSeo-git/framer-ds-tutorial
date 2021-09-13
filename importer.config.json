@@ -4,20 +4,8 @@
     "rootFiles": [
         "node_modules/office-ui-fabric-react/lib/index.d.ts"
     ],
-    "ignore": [
-        "**/node_modules/**",
-        "**/stories/**",
-        "**/__mocks__/**",
-        "**/__examples__/**",
-        "**/__tests__/**",
-        "**/__docs__/**",
-        "**/*.test.{js,jsx}",
-        "**/*-test.{js,jsx}",
-        "**/*.spec.{js,jsx}",
-        "**/*-spec.{js,jsx}"
-    ],
     "additionalImports": [],
-    "out": "fluent-ui.framerfx/code",
+    "out": "src/framerfx/code",
     "components": {
         "GroupSpacer": {
             "ignore": false

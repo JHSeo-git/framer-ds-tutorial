@@ -1,25 +1,12 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { ActionButton } from 'office-ui-fabric-react'
+import { ActionButton as UIActionButton } from '@src/framerfx/code/ActionButton'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ActionButton onClick={() => console.log('click')}>test</ActionButton>
+      <UIActionButton onClick={() => console.log('click')}>test</UIActionButton>
+    </>
   )
 }
 
