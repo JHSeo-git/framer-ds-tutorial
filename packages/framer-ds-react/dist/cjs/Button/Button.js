@@ -1,18 +1,2 @@
-'use strict';
-
-var React = require('react');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-
-var Button = function Button(_ref) {
-  var onClick = _ref.onClick,
-      children = _ref.children;
-  return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("button", {
-    onClick: onClick
-  }, children));
-};
-
-module.exports = Button;
+"use strict";function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var t=e(require("react"));module.exports=function(e){var n=e.onClick,r=e.children;return t.default.createElement(t.default.Fragment,null,t.default.createElement("button",{onClick:n},r))};
 //# sourceMappingURL=Button.js.map

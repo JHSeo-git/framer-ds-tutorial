@@ -1,3 +1,2 @@
-import Button from './Button'
-
-export { Button }
+export { default as Button } from './components/Button'
+export { themes as Themes } from './themes'

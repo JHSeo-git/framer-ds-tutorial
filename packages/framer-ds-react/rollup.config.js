@@ -4,17 +4,16 @@ import nodeResolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import peerDeptExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 const extensions = ['.ts', '.tsx']
 
 export default (args) => {
-  const plugins = []
   let sourcemap = false
 
   console.log(`Running ${args.debug ? 'debug' : 'production'} build...`)
 
   if (!args.debug) {
-    plugins.push(terser())
     sourcemap = true
   }
 
@@ -49,7 +48,10 @@ export default (args) => {
       commonjs({
         extensions: [...extensions, '.js'],
       }),
-      // ...plugins,
+      terser(),
+      visualizer({
+        filename: './dist-visualizer/stats.html',
+      }),
     ],
   }
 }

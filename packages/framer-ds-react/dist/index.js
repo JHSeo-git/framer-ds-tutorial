@@ -1,12 +1,2 @@
-import React from 'react';
-
-var Button = function Button(_ref) {
-  var onClick = _ref.onClick,
-      children = _ref.children;
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("button", {
-    onClick: onClick
-  }, children));
-};
-
-export { Button };
+import e from"react";var r=function(r){var t=r.onClick,n=r.children;return e.createElement(e.Fragment,null,e.createElement("button",{onClick:t},n))};export{r as Button};
 //# sourceMappingURL=index.js.map
