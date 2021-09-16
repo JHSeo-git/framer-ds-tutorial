@@ -1,2 +1,2 @@
 export { default as Button } from './components/Button'
-export { themes as Themes } from './themes'
+export { darkThemeClassName } from './lib/stitches'

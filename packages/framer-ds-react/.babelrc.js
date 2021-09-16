@@ -20,7 +20,17 @@ module.exports = function (api) {
     '@babel/preset-react',
   ]
 
-  const plugins = ['@babel/transform-runtime']
+  const plugins = [
+    [
+      'module-resolver',
+      {
+        alias: {
+          '@src': './src',
+        },
+      },
+    ],
+    '@babel/transform-runtime',
+  ]
 
   return {
     presets,

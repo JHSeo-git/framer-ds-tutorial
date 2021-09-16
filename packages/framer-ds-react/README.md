@@ -28,3 +28,7 @@ lighthouse 유투브 영상에서 설명한 내용 위주로 추론을 해봄.
 제일 의문인건 만약 컴포넌트가 수정되어야 하거나 추가되어야 할 경우 1번 부터 진행하는가?
 아니면 다른 유연한 프로세스가 존재하는가?
 (가령 프레이머에서 제작하고 리액트 컴포넌트로 export 할 수 있다던지)
+
+## token
+
+> - https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js

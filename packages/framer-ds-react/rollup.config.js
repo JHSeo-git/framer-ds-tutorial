@@ -33,17 +33,16 @@ export default (args) => {
         sourcemap,
         format: 'cjs',
         exports: 'auto',
-        preserveModules: true,
       },
     ],
     external: [/@babel\/runtime/],
     plugins: [
-      peerDeptExternal(),
       babel({
         babelHelpers: 'runtime',
         exclude: 'node_modules/**',
         extensions,
       }),
+      peerDeptExternal(),
       nodeResolve(),
       commonjs({
         extensions: [...extensions, '.js'],

@@ -9,6 +9,10 @@ const mediaQuery = {
   xl: media(breakpoints.xl),
   xxl: media(breakpoints.xxl),
   custom: media,
+  motion: '(prefers-reduced-motion)',
+  hover: '(any-hover: hover)',
+  dark: '(prefers-color-scheme: dark)',
+  light: '(prefers-color-scheme: light)',
 }
 export type MediaQuery = typeof mediaQuery
 export default mediaQuery
