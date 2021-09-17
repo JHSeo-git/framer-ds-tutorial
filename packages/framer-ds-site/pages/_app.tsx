@@ -22,7 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
 
       <Button
-        kind="primary"
+        kind="grayScale"
+        shape="round"
         onClick={() =>
           setTheme(
             theme === 'theme-default' ? darkThemeClassName : 'theme-default',

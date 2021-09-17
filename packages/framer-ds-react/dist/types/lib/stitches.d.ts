@@ -1,3 +1,6 @@
+/**
+ * @see https://github.com/radix-ui/design-system/blob/master/stitches.config.ts
+ */
 /// <reference types="react" />
 import { PropertyValue } from '@stitches/react';
 declare const styled: <Type extends import("@stitches/react/types/util").Function | keyof JSX.IntrinsicElements | import("react").ComponentType<any>, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
@@ -176,10 +179,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         widest: string;
     };
     radii: {
-        1: string;
-        2: string;
-        3: string;
-        4: string;
+        radius4: string;
+        radius6: string;
+        radius8: string;
+        radius12: string;
+        radius16: string;
         round: string;
         pill: string;
     };
@@ -198,6 +202,38 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         toast: number;
         alert: number;
         max: number;
+    };
+    sizes: {
+        size5: string;
+        size10: string;
+        size15: string;
+        size20: string;
+        size25: string;
+        size35: string;
+        size45: string;
+        size65: string;
+        size80: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+    };
+    space: {
+        space5: string;
+        space10: string;
+        space15: string;
+        space20: string;
+        space25: string;
+        space35: string;
+        space45: string;
+        space65: string;
+        space80: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     p: (value: PropertyValue<'padding'>) => {
@@ -524,10 +560,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         widest: string;
     };
     radii: {
-        1: string;
-        2: string;
-        3: string;
-        4: string;
+        radius4: string;
+        radius6: string;
+        radius8: string;
+        radius12: string;
+        radius16: string;
         round: string;
         pill: string;
     };
@@ -546,6 +583,38 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         toast: number;
         alert: number;
         max: number;
+    };
+    sizes: {
+        size5: string;
+        size10: string;
+        size15: string;
+        size20: string;
+        size25: string;
+        size35: string;
+        size45: string;
+        size65: string;
+        size80: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+    };
+    space: {
+        space5: string;
+        space10: string;
+        space15: string;
+        space20: string;
+        space25: string;
+        space35: string;
+        space45: string;
+        space65: string;
+        space80: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     p: (value: PropertyValue<'padding'>) => {
@@ -841,10 +910,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         widest: import("@stitches/react/types/theme").Token<"widest", string, "letterSpacings", "">;
     };
     radii: {
-        1: import("@stitches/react/types/theme").Token<"1", string, "radii", "">;
-        2: import("@stitches/react/types/theme").Token<"2", string, "radii", "">;
-        3: import("@stitches/react/types/theme").Token<"3", string, "radii", "">;
-        4: import("@stitches/react/types/theme").Token<"4", string, "radii", "">;
+        radius4: import("@stitches/react/types/theme").Token<"radius4", string, "radii", "">;
+        radius6: import("@stitches/react/types/theme").Token<"radius6", string, "radii", "">;
+        radius8: import("@stitches/react/types/theme").Token<"radius8", string, "radii", "">;
+        radius12: import("@stitches/react/types/theme").Token<"radius12", string, "radii", "">;
+        radius16: import("@stitches/react/types/theme").Token<"radius16", string, "radii", "">;
         round: import("@stitches/react/types/theme").Token<"round", string, "radii", "">;
         pill: import("@stitches/react/types/theme").Token<"pill", string, "radii", "">;
     };
@@ -863,6 +933,38 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         toast: import("@stitches/react/types/theme").Token<"toast", string, "zIndices", "">;
         alert: import("@stitches/react/types/theme").Token<"alert", string, "zIndices", "">;
         max: import("@stitches/react/types/theme").Token<"max", string, "zIndices", "">;
+    };
+    sizes: {
+        size5: import("@stitches/react/types/theme").Token<"size5", string, "sizes", "">;
+        size10: import("@stitches/react/types/theme").Token<"size10", string, "sizes", "">;
+        size15: import("@stitches/react/types/theme").Token<"size15", string, "sizes", "">;
+        size20: import("@stitches/react/types/theme").Token<"size20", string, "sizes", "">;
+        size25: import("@stitches/react/types/theme").Token<"size25", string, "sizes", "">;
+        size35: import("@stitches/react/types/theme").Token<"size35", string, "sizes", "">;
+        size45: import("@stitches/react/types/theme").Token<"size45", string, "sizes", "">;
+        size65: import("@stitches/react/types/theme").Token<"size65", string, "sizes", "">;
+        size80: import("@stitches/react/types/theme").Token<"size80", string, "sizes", "">;
+        sm: import("@stitches/react/types/theme").Token<"sm", string, "sizes", "">;
+        md: import("@stitches/react/types/theme").Token<"md", string, "sizes", "">;
+        lg: import("@stitches/react/types/theme").Token<"lg", string, "sizes", "">;
+        xl: import("@stitches/react/types/theme").Token<"xl", string, "sizes", "">;
+        '2xl': import("@stitches/react/types/theme").Token<"2xl", string, "sizes", "">;
+    };
+    space: {
+        space5: import("@stitches/react/types/theme").Token<"space5", string, "space", "">;
+        space10: import("@stitches/react/types/theme").Token<"space10", string, "space", "">;
+        space15: import("@stitches/react/types/theme").Token<"space15", string, "space", "">;
+        space20: import("@stitches/react/types/theme").Token<"space20", string, "space", "">;
+        space25: import("@stitches/react/types/theme").Token<"space25", string, "space", "">;
+        space35: import("@stitches/react/types/theme").Token<"space35", string, "space", "">;
+        space45: import("@stitches/react/types/theme").Token<"space45", string, "space", "">;
+        space65: import("@stitches/react/types/theme").Token<"space65", string, "space", "">;
+        space80: import("@stitches/react/types/theme").Token<"space80", string, "space", "">;
+        sm: import("@stitches/react/types/theme").Token<"sm", string, "space", "">;
+        md: import("@stitches/react/types/theme").Token<"md", string, "space", "">;
+        lg: import("@stitches/react/types/theme").Token<"lg", string, "space", "">;
+        xl: import("@stitches/react/types/theme").Token<"xl", string, "space", "">;
+        '2xl': import("@stitches/react/types/theme").Token<"2xl", string, "space", "">;
     };
 };
 declare const darkTheme: string & {

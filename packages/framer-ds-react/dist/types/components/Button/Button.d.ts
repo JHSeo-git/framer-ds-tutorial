@@ -7,9 +7,9 @@ export declare type ButtonProps = {
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     children: React.ReactNode;
 } & React.ComponentProps<typeof BaseButton>;
-declare const Button: ({ kind, type, animate, as, href, target, onClick, children, ...rest }: ButtonProps) => JSX.Element;
+declare const Button: ({ animate, as, href, target, onClick, children, ...rest }: ButtonProps) => JSX.Element;
 declare const BaseButton: import("@stitches/react/types/styled-component").StyledComponent<import("framer-motion").ForwardRefComponent<HTMLButtonElement, import("framer-motion").HTMLMotionProps<"button">>, {
-    kind?: "primary" | "secondary" | "teritary" | undefined;
+    kind?: "primary" | "grayScale" | "secondary" | "teritary" | undefined;
     shape?: "round" | "circle" | undefined;
     type?: "button" | "link" | "submit" | undefined;
     state?: "active" | "waiting" | "ghost" | undefined;
@@ -198,10 +198,11 @@ declare const BaseButton: import("@stitches/react/types/styled-component").Style
         widest: string;
     };
     radii: {
-        1: string;
-        2: string;
-        3: string;
-        4: string;
+        radius4: string;
+        radius6: string;
+        radius8: string;
+        radius12: string;
+        radius16: string;
         round: string;
         pill: string;
     };
@@ -220,6 +221,38 @@ declare const BaseButton: import("@stitches/react/types/styled-component").Style
         toast: number;
         alert: number;
         max: number;
+    };
+    sizes: {
+        size5: string;
+        size10: string;
+        size15: string;
+        size20: string;
+        size25: string;
+        size35: string;
+        size45: string;
+        size65: string;
+        size80: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+    };
+    space: {
+        space5: string;
+        space10: string;
+        space15: string;
+        space20: string;
+        space25: string;
+        space35: string;
+        space45: string;
+        space65: string;
+        space80: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     p: (value: import("@stitches/react").PropertyValue<"padding">) => {

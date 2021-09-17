@@ -3,6 +3,8 @@ import { MediaQuery } from './shared/mediaQuery';
 import { Typography } from './shared/typography';
 import { ZIndices } from '@src/tokens/zIndices';
 import { Radii } from '@src/tokens/radii';
+import { Space } from '@src/tokens/space';
+import { Sizes } from '@src/tokens/sizes';
 /**
  * Color Theme 요소 타입 정의
  * ------------------------------------------------------
@@ -134,5 +136,7 @@ export declare type Theme = {
     typography: Typography;
     zIndices: ZIndices;
     radii: Radii;
+    space: Space;
+    sizes: Sizes;
 };
 export {};

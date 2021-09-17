@@ -1,5 +1,5 @@
 import colorPalette from '@src/tokens/colorPalette'
-import { Colors, StitchesColors } from '../types'
+import { StitchesColors } from '../types'
 
 // const themeColor: Colors = {
 //   transparent: colorPalette.transparent,
@@ -132,20 +132,20 @@ const themeColor: StitchesColors = {
   error1100: colorPalette.redDark[1100],
 
   background: {
-    primary: colorPalette.mauveDark[50],
-    secondary: colorPalette.mauveDark[200],
-    teritary: colorPalette.mauveDark[400],
-    inversePrimary: colorPalette.grayDark[50],
-    inverseSecondary: colorPalette.grayDark[200],
-    inverseTeritary: colorPalette.grayDark[400],
+    primary: colorPalette.purpleDark[100],
+    secondary: colorPalette.cyanDark[100],
+    teritary: colorPalette.amberDark[100],
+    inversePrimary: colorPalette.purpleDark[300],
+    inverseSecondary: colorPalette.cyanDark[300],
+    inverseTeritary: colorPalette.amberDark[300],
   },
   foreground: {
     primary: colorPalette.white,
-    secondary: colorPalette.mauveDark[1100],
-    teritary: colorPalette.mauveDark[900],
-    inversePrimary: colorPalette.white,
-    inverseSecondary: colorPalette.grayDark[1100],
-    inverseTeritary: colorPalette.grayDark[900],
+    secondary: colorPalette.cyanDark[1100],
+    teritary: colorPalette.amberDark[1100],
+    inversePrimary: colorPalette.purpleDark[900],
+    inverseSecondary: colorPalette.cyanDark[900],
+    inverseTeritary: colorPalette.amberDark[900],
   },
 }
 

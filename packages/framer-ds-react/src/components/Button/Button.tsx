@@ -12,8 +12,6 @@ export type ButtonProps = {
 } & React.ComponentProps<typeof BaseButton>
 
 const Button = ({
-  kind = 'primary',
-  type = 'button',
   animate = false,
   as = motion.button,
   href,
@@ -52,6 +50,12 @@ const BaseButton = styled(motion.button, {
   fontWeight: '$bold',
   lineHeight: '$base',
 
+  borderColor: '$mono900',
+  borderWidth: '0.0625rem',
+
+  px: '$space20',
+  py: '$space10',
+
   '&:disabled': {
     backgroundColor: '$mono100',
     boxShadow: 'inset 0 0 0 1px $colors$mono600',
@@ -59,8 +63,19 @@ const BaseButton = styled(motion.button, {
     pointerEvents: 'none',
   },
 
+  defaultVariants: {
+    kind: 'primary',
+    type: 'button',
+  },
   variants: {
     kind: {
+      grayScale: {
+        backgroundColor: '$mono100',
+        color: '$mono1100',
+        '&:hover': {
+          backgroundColor: '$mono300',
+        },
+      },
       primary: {
         backgroundColor: '$bgPrimary',
         color: '$fgPrimary',
@@ -85,7 +100,7 @@ const BaseButton = styled(motion.button, {
     },
     shape: {
       round: {
-        borderRadius: '$2',
+        borderRadius: '$radius6',
       },
       circle: {
         borderRadius: '$round',
@@ -104,9 +119,13 @@ const BaseButton = styled(motion.button, {
     size: {
       small: {
         fontSize: '$sm',
+        px: '$space10',
+        py: '$space5',
       },
       large: {
         fontSize: '$lg',
+        px: '$space35',
+        py: '$space20',
       },
     },
   },

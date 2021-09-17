@@ -1,8 +1,9 @@
 declare const radii: {
-    1: string;
-    2: string;
-    3: string;
-    4: string;
+    radius4: string;
+    radius6: string;
+    radius8: string;
+    radius12: string;
+    radius16: string;
     round: string;
     pill: string;
 };

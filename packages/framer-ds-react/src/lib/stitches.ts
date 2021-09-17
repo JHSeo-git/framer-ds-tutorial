@@ -1,7 +1,12 @@
+/**
+ * @see https://github.com/radix-ui/design-system/blob/master/stitches.config.ts
+ */
+
 import { themes } from '@src/themes'
 import { createStitches, PropertyValue } from '@stitches/react'
 
 // base theme(lightTheme)
+// TODO: auto generate primary, secondary, ...
 const {
   styled,
   theme: lightTheme,
@@ -150,6 +155,8 @@ const {
     letterSpacings: themes.lightTheme.typography.letterSpacing,
     radii: themes.lightTheme.radii,
     zIndices: themes.lightTheme.zIndices,
+    sizes: themes.lightTheme.sizes,
+    space: themes.lightTheme.space,
   },
   utils: {
     p: (value: PropertyValue<'padding'>) => ({
@@ -267,7 +274,6 @@ const {
   },
 })
 
-// TODO: auto generate primary, secondary, ...
 const darkTheme = createTheme({
   colors: {
     transparent: themes.darkTheme.colors.transparent,
