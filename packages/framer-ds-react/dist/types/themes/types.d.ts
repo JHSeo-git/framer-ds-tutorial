@@ -35,6 +35,10 @@ declare type SemanticColors = {
     foreground: SemanticColorElement;
 };
 export declare type Colors = FoundationColors & SemanticColors;
+/**
+ * Stitches 용 Color 타입 정의
+ * ------------------------------------------------------
+ */
 declare type StitchesFoundationColors = {
     transparent: string;
     current: string;

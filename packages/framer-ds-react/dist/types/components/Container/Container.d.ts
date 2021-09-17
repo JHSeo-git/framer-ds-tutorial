@@ -1,19 +1,10 @@
-import React, { ElementType } from 'react';
-export declare type ButtonProps = {
-    animate?: boolean;
-    as?: ElementType;
-    href?: string;
-    target?: string;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+import React from 'react';
+export declare type ContainerProps = {
     children: React.ReactNode;
-} & React.ComponentProps<typeof BaseButton>;
-declare const Button: ({ animate, as, href, target, onClick, children, ...rest }: ButtonProps) => JSX.Element;
-declare const BaseButton: import("@stitches/react/types/styled-component").StyledComponent<import("framer-motion").ForwardRefComponent<HTMLButtonElement, import("framer-motion").HTMLMotionProps<"button">>, {
-    kind?: "grayScale" | "primary" | "secondary" | "teritary" | undefined;
-    shape?: "round" | "circle" | "pill" | undefined;
-    type?: "button" | "link" | "submit" | undefined;
-    state?: "active" | "waiting" | "ghost" | undefined;
-    size?: "large" | "small" | undefined;
+} & React.ComponentProps<typeof BaseContainer>;
+declare const Container: ({ children, ...rest }: ContainerProps) => JSX.Element;
+declare const BaseContainer: import("@stitches/react/types/styled-component").StyledComponent<"div", {
+    size?: "w-md" | "w-sm" | "w-lg" | "w-xl" | undefined;
 }, {
     sm: string;
     md: string;
@@ -387,4 +378,4 @@ declare const BaseButton: import("@stitches/react/types/styled-component").Style
         backgroundClip: import("@stitches/react").PropertyValue<"backgroundClip">;
     };
 }>>;
-export default Button;
+export default Container;

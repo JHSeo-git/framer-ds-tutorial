@@ -50,9 +50,6 @@ const BaseButton = styled(motion.button, {
   fontWeight: '$bold',
   lineHeight: '$base',
 
-  borderColor: '$mono900',
-  borderWidth: '0.0625rem',
-
   px: '$space20',
   py: '$space10',
 
@@ -64,16 +61,16 @@ const BaseButton = styled(motion.button, {
   },
 
   defaultVariants: {
-    kind: 'primary',
+    kind: 'grayScale',
     type: 'button',
   },
   variants: {
     kind: {
       grayScale: {
-        backgroundColor: '$mono100',
+        backgroundColor: '$mono300',
         color: '$mono1100',
         '&:hover': {
-          backgroundColor: '$mono300',
+          backgroundColor: '$mono500',
         },
       },
       primary: {
@@ -104,6 +101,9 @@ const BaseButton = styled(motion.button, {
       },
       circle: {
         borderRadius: '$round',
+      },
+      pill: {
+        borderRadius: '$pill',
       },
     },
     type: {

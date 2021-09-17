@@ -21,6 +21,8 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         current: string;
         white: string;
         black: string;
+        hiContrast: string;
+        loContrast: string;
         primary50: string;
         primary100: string;
         primary200: string;
@@ -376,7 +378,7 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         css: CSS;
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
-} & CSS & { [K2 in keyof Composers[K]]: K2 extends "variants" | "compoundVariants" | "defaultVariants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
+} & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
     sm: string;
     md: string;
     lg: string;
@@ -402,6 +404,8 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         current: string;
         white: string;
         black: string;
+        hiContrast: string;
+        loContrast: string;
         primary50: string;
         primary100: string;
         primary200: string;
@@ -752,6 +756,8 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         current: import("@stitches/react/types/theme").Token<"current", string, "colors", "">;
         white: import("@stitches/react/types/theme").Token<"white", string, "colors", "">;
         black: import("@stitches/react/types/theme").Token<"black", string, "colors", "">;
+        hiContrast: import("@stitches/react/types/theme").Token<"hiContrast", string, "colors", "">;
+        loContrast: import("@stitches/react/types/theme").Token<"loContrast", string, "colors", "">;
         primary50: import("@stitches/react/types/theme").Token<"primary50", string, "colors", "">;
         primary100: import("@stitches/react/types/theme").Token<"primary100", string, "colors", "">;
         primary200: import("@stitches/react/types/theme").Token<"primary200", string, "colors", "">;
@@ -976,6 +982,8 @@ declare const darkTheme: string & {
         current: string;
         white: string;
         black: string;
+        hiContrast: string;
+        loContrast: string;
         primary50: string;
         primary100: string;
         primary200: string;

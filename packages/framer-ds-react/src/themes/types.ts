@@ -48,6 +48,11 @@ type SemanticColors = {
 
 export type Colors = FoundationColors & SemanticColors
 
+/**
+ * Stitches 용 Color 타입 정의
+ * ------------------------------------------------------
+ */
+// TODO: auto generated color types
 type StitchesFoundationColors = {
   // common color
   transparent: string

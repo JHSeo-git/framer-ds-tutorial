@@ -30,6 +30,9 @@ const {
       white: themes.lightTheme.colors.white,
       black: themes.lightTheme.colors.black,
 
+      hiContrast: themes.lightTheme.colors.mono1100,
+      loContrast: themes.lightTheme.colors.white,
+
       primary50: themes.lightTheme.colors.primary50,
       primary100: themes.lightTheme.colors.primary100,
       primary200: themes.lightTheme.colors.primary200,
@@ -280,6 +283,9 @@ const darkTheme = createTheme({
     current: themes.darkTheme.colors.current,
     white: themes.darkTheme.colors.white,
     black: themes.darkTheme.colors.black,
+
+    hiContrast: themes.darkTheme.colors.mono1100,
+    loContrast: themes.darkTheme.colors.mono200,
 
     primary50: themes.darkTheme.colors.primary50,
     primary100: themes.darkTheme.colors.primary100,

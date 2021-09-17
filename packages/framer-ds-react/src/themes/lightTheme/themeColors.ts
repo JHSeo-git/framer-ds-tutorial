@@ -101,12 +101,12 @@ const themeColor: StitchesColors = {
   error1100: colorPalette.red[1100],
 
   background: {
-    primary: colorPalette.purple[100],
-    secondary: colorPalette.cyan[100],
-    teritary: colorPalette.amber[100],
-    inversePrimary: colorPalette.purple[300],
-    inverseSecondary: colorPalette.cyan[300],
-    inverseTeritary: colorPalette.amber[300],
+    primary: colorPalette.purple[300],
+    secondary: colorPalette.cyan[300],
+    teritary: colorPalette.amber[300],
+    inversePrimary: colorPalette.purple[500],
+    inverseSecondary: colorPalette.cyan[500],
+    inverseTeritary: colorPalette.amber[500],
   },
   foreground: {
     primary: colorPalette.purple[1100],
