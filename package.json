@@ -1,12 +1,12 @@
 {
-  "name": "framer-ds-tutorial",
+  "name": "@framerds/tutorial",
   "version": "0.0.1",
   "description": "framer design system tutorial",
   "main": "index.js",
   "repository": "https://github.com/JHSeo-git/framer-ds-tutorial.git",
   "author": "JHSeo <qnfqnfqnf@gmail.com>",
   "license": "MIT",
-  "private": "true",
+  "private": true,
   "workspaces": [
     "packages/framer-ds-react",
     "packages/framer-ds-site"

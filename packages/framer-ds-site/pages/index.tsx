@@ -8,7 +8,7 @@ import {
   Card,
   Flex,
   Section,
-} from '../../framer-ds-react'
+} from '@framerds/react'
 
 const Home: NextPage = () => {
   const [theme, setTheme] = React.useState('theme-default')
