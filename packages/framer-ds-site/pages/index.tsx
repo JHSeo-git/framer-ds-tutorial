@@ -1,11 +1,13 @@
 import React from 'react'
 import type { NextPage } from 'next'
 import {
-  Button,
-  Box,
-  Container,
-  Section,
   darkThemeClassName,
+  Box,
+  Button,
+  Container,
+  Card,
+  Flex,
+  Section,
 } from '../../framer-ds-react'
 
 const Home: NextPage = () => {
@@ -19,19 +21,37 @@ const Home: NextPage = () => {
     <Box css={{ bc: '$loContrast' }}>
       <Section>
         <Container>
-          <Button
-            kind="primary"
-            shape="pill"
-            onClick={() =>
-              setTheme(
-                theme === 'theme-default'
-                  ? darkThemeClassName
-                  : 'theme-default',
-              )
-            }
-          >
-            Toggle Theme
-          </Button>
+          <Flex gap="md">
+            <Button
+              kind="grayScale"
+              shape="pill"
+              onClick={() =>
+                setTheme(
+                  theme === 'theme-default'
+                    ? darkThemeClassName
+                    : 'theme-default',
+                )
+              }
+            >
+              Toggle Theme
+            </Button>
+            <Button kind="primary" shape="pill">
+              Primary
+            </Button>
+            <Button kind="secondary" shape="pill">
+              Secondary
+            </Button>
+            <Button kind="teritary" shape="pill">
+              Teritary
+            </Button>
+          </Flex>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Card variant="ghost" css={{ padding: '$space10' }}>
+            Card A
+          </Card>
         </Container>
       </Section>
     </Box>

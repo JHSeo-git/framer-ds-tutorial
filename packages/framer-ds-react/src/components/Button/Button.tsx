@@ -50,12 +50,13 @@ const BaseButton = styled(motion.button, {
   fontWeight: '$bold',
   lineHeight: '$base',
 
+  // sizes
+  height: '$size45',
   px: '$space20',
-  py: '$space10',
 
   '&:disabled': {
     backgroundColor: '$mono100',
-    boxShadow: 'inset 0 0 0 1px $colors$mono600',
+    boxShadow: 'inset 0 0 0 1px $mono600',
     color: '$mono700',
     pointerEvents: 'none',
   },
@@ -71,33 +72,77 @@ const BaseButton = styled(motion.button, {
         color: '$mono1100',
         '&:hover': {
           backgroundColor: '$mono500',
+          boxShadow: 'inset 0 0 0 1px $mono500',
+        },
+        '&:active': {
+          backgroundColor: '$mono700',
+          boxShadow: 'inset 0 0 0 1px $mono500',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $mono500, 0 0 0 1px &mono500',
+        },
+        '&:focus-visible': {
+          boxShadow: 'inset 0 0 0 1px $mono500, 0 0 0 1px &mono500',
         },
       },
       primary: {
-        backgroundColor: '$bgPrimary',
-        color: '$fgPrimary',
+        backgroundColor: '$primary300',
+        color: '$mono1100',
         '&:hover': {
-          backgroundColor: '$bgInversePrimary',
+          backgroundColor: '$primary500',
+          boxShadow: 'inset 0 0 0 1px $primary500',
+        },
+        '&:active': {
+          backgroundColor: '$primary700',
+          boxShadow: 'inset 0 0 0 1px $primary500',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $primary500, 0 0 0 1px &primary500',
+        },
+        '&:focus-visible': {
+          boxShadow: 'inset 0 0 0 1px $primary500, 0 0 0 1px &primary500',
         },
       },
       secondary: {
-        backgroundColor: '$bgSecondary',
-        color: '$fgSecondary',
+        backgroundColor: '$secondary300',
+        color: '$mono1100',
         '&:hover': {
-          backgroundColor: '$bgInverseSecondary',
+          backgroundColor: '$secondary500',
+          boxShadow: 'inset 0 0 0 1px $secondary500',
+        },
+        '&:active': {
+          backgroundColor: '$secondary700',
+          boxShadow: 'inset 0 0 0 1px $secondary500',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $secondary500, 0 0 0 1px &secondary500',
+        },
+        '&:focus-visible': {
+          boxShadow: 'inset 0 0 0 1px $secondary500, 0 0 0 1px &secondary500',
         },
       },
       teritary: {
-        backgroundColor: '$bgTeritary',
-        color: '$fgTeritary',
+        backgroundColor: '$teritary300',
+        color: '$mono1100',
         '&:hover': {
-          backgroundColor: '$bgInverseTeritary',
+          backgroundColor: '$teritary500',
+          boxShadow: 'inset 0 0 0 1px $teritary500',
+        },
+        '&:active': {
+          backgroundColor: '$teritary700',
+          boxShadow: 'inset 0 0 0 1px $teritary500',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $teritary500, 0 0 0 1px &teritary500',
+        },
+        '&:focus-visible': {
+          boxShadow: 'inset 0 0 0 1px $teritary500, 0 0 0 1px &teritary500',
         },
       },
     },
     shape: {
       round: {
-        borderRadius: '$radius6',
+        borderRadius: '$radius4',
       },
       circle: {
         borderRadius: '$round',
@@ -119,13 +164,13 @@ const BaseButton = styled(motion.button, {
     size: {
       small: {
         fontSize: '$sm',
+        height: '$size35',
         px: '$space10',
-        py: '$space5',
       },
       large: {
-        fontSize: '$lg',
+        fontSize: '$xl',
+        height: '$size65',
         px: '$space35',
-        py: '$space20',
       },
     },
   },
