@@ -59,17 +59,17 @@ theme 종류에 대한 차이는 현재 색깔 차이 밖에 없다.
 5. Avatar
 6. Badge
 7. Banner
-8. [x]: Box
-9. [-]: Button
-10. [-]: Card
+8. Box
+9. Button
+10. Card
 11. Checkbox
 12. Code
-13. [x]: Container
+13. Container
 14. ContextMenu
 15. ControlGroup
 16. Dialog
 17. DropdownMenu
-18. [x]: Flex
+18. Flex
 19. Grid
 20. Heading
 21. IconButton
