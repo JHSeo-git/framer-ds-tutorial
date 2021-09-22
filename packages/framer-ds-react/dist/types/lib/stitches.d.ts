@@ -23,6 +23,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         black: string;
         hiContrast: string;
         loContrast: string;
+        canvas: string;
+        panel: string;
+        transparentPanel: string;
+        shadowLight: string;
+        shadowDark: string;
         primary50: string;
         primary100: string;
         primary200: string;
@@ -406,6 +411,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         black: string;
         hiContrast: string;
         loContrast: string;
+        canvas: string;
+        panel: string;
+        transparentPanel: string;
+        shadowLight: string;
+        shadowDark: string;
         primary50: string;
         primary100: string;
         primary200: string;
@@ -758,6 +768,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         black: import("@stitches/react/types/theme").Token<"black", string, "colors", "">;
         hiContrast: import("@stitches/react/types/theme").Token<"hiContrast", string, "colors", "">;
         loContrast: import("@stitches/react/types/theme").Token<"loContrast", string, "colors", "">;
+        canvas: import("@stitches/react/types/theme").Token<"canvas", string, "colors", "">;
+        panel: import("@stitches/react/types/theme").Token<"panel", string, "colors", "">;
+        transparentPanel: import("@stitches/react/types/theme").Token<"transparentPanel", string, "colors", "">;
+        shadowLight: import("@stitches/react/types/theme").Token<"shadowLight", string, "colors", "">;
+        shadowDark: import("@stitches/react/types/theme").Token<"shadowDark", string, "colors", "">;
         primary50: import("@stitches/react/types/theme").Token<"primary50", string, "colors", "">;
         primary100: import("@stitches/react/types/theme").Token<"primary100", string, "colors", "">;
         primary200: import("@stitches/react/types/theme").Token<"primary200", string, "colors", "">;
@@ -984,6 +999,11 @@ declare const darkTheme: string & {
         black: string;
         hiContrast: string;
         loContrast: string;
+        canvas: string;
+        panel: string;
+        transparentPanel: string;
+        shadowLight: string;
+        shadowDark: string;
         primary50: string;
         primary100: string;
         primary200: string;

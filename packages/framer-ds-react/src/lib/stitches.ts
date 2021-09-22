@@ -33,6 +33,12 @@ const {
       hiContrast: themes.lightTheme.colors.mono1100,
       loContrast: themes.lightTheme.colors.white,
 
+      canvas: 'hsl(0 0% 93%)',
+      panel: themes.lightTheme.colors.white,
+      transparentPanel: 'hsl(0 0% 0% / 97%)',
+      shadowLight: 'hsl(206 22% 7% / 35%)',
+      shadowDark: 'hsl(206 22% 7% / 20%)',
+
       primary50: themes.lightTheme.colors.primary50,
       primary100: themes.lightTheme.colors.primary100,
       primary200: themes.lightTheme.colors.primary200,
@@ -286,6 +292,12 @@ const darkTheme = createTheme({
 
     hiContrast: themes.darkTheme.colors.mono1100,
     loContrast: themes.darkTheme.colors.mono200,
+
+    canvas: 'hsl(0 0% 15%)',
+    panel: themes.darkTheme.colors.mono400,
+    transparentPanel: 'hsl(0 100% 100% / 97%)',
+    shadowLight: 'hsl(206 22% 7% / 35%)',
+    shadowDark: 'hsl(206 22% 7% / 20%)',
 
     primary50: themes.darkTheme.colors.primary50,
     primary100: themes.darkTheme.colors.primary100,

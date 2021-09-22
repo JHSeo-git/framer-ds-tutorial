@@ -33,6 +33,11 @@ declare const BaseCard: import("@stitches/react/types/styled-component").StyledC
         black: string;
         hiContrast: string;
         loContrast: string;
+        canvas: string;
+        panel: string;
+        transparentPanel: string;
+        shadowLight: string;
+        shadowDark: string;
         primary50: string;
         primary100: string;
         primary200: string;

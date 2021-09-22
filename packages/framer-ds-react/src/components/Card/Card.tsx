@@ -24,7 +24,7 @@ const BaseCard = styled(motion.div, {
   lineHeight: '$base',
   padding: '0',
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
-  backgroundColor: '$white',
+  backgroundColor: '$panel',
   color: 'inherit',
   flexShrink: 0,
   borderRadius: '$radius6',
@@ -73,7 +73,7 @@ const BaseCard = styled(motion.div, {
         },
         '@hover': {
           '&:hover': {
-            backgroundColor: '$white',
+            backgroundColor: '$panel',
             transform: 'translateY(-2px)',
             '&::before': {
               opacity: 1,
