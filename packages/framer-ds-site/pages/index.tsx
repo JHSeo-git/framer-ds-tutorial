@@ -1,37 +1,36 @@
 import React from 'react'
 import type { NextPage } from 'next'
+import { useTheme } from 'next-themes'
 import {
-  darkThemeClassName,
   Box,
   Button,
   Container,
   Card,
   Flex,
   Section,
+  Text,
+  Heading,
 } from '@framerds/react'
 
 const Home: NextPage = () => {
-  const [theme, setTheme] = React.useState('theme-default')
-
-  React.useEffect(() => {
-    document.body.className = ''
-    document.body.classList.add(theme)
-  }, [theme])
+  const { theme, setTheme } = useTheme()
   return (
     <Box css={{ bc: '$loContrast' }}>
       <Section>
         <Container>
+          <Heading
+            size="h1"
+            color="grayScale"
+            gradient="true"
+            css={{ WebkitBackgroundClip: 'text' }}
+          >
+            Button
+          </Heading>
           <Flex gap="md">
             <Button
               kind="grayScale"
               shape="pill"
-              onClick={() =>
-                setTheme(
-                  theme === 'theme-default'
-                    ? darkThemeClassName
-                    : 'theme-default',
-                )
-              }
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             >
               Toggle Theme
             </Button>
