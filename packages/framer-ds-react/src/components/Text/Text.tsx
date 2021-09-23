@@ -22,6 +22,9 @@ const BaseText = styled('span', {
   fontVariantNumeric: 'tabular-nums',
   display: 'block',
 
+  // default
+  lh: '$tight',
+
   defaultVariants: {
     size: '$base',
     color: 'grayScale',
@@ -31,10 +34,12 @@ const BaseText = styled('span', {
       h1: {
         fontSize: '$h1',
         fontWeight: 'bold',
+        textIndent: '-0.018em',
       },
       h2: {
         fontSize: '$h2',
         fontWeight: 'bold',
+        textIndent: '-0.005em',
       },
       h3: {
         fontSize: '$h3',
@@ -66,32 +71,40 @@ const BaseText = styled('span', {
       },
       '2xl': {
         fontSize: '$2xl',
+        textIndent: '-0.005em',
       },
       '3xl': {
         fontSize: '$3xl',
+        textIndent: '-0.011em',
       },
       '4xl': {
         fontSize: '$4xl',
+        textIndent: '-0.018em',
       },
       '5xl': {
         fontSize: '$5xl',
         letterSpacing: '$tight',
+        textIndent: '-0.020em',
       },
       '6xl': {
         fontSize: '$6xl',
         letterSpacing: '$tight',
+        textIndent: '-0.022em',
       },
       '7xl': {
         fontSize: '$7xl',
         letterSpacing: '$tighter',
+        textIndent: '-0.024em',
       },
       '8xl': {
         fontSize: '$8xl',
         letterSpacing: '$tighter',
+        textIndent: '-0.026em',
       },
       '9xl': {
         fontSize: '$9xl',
         letterSpacing: '$tighter',
+        textIndent: '-0.028em',
       },
     },
     color: {
@@ -130,49 +143,49 @@ const BaseText = styled('span', {
       color: 'grayScale',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $mono1000, $mono1100)',
+        background: 'linear-gradient(to right, $mono900, $mono1100)',
       },
     },
     {
       color: 'primary',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $primary1000, $primary800)',
+        background: 'linear-gradient(to right, $primary1000, $secondary1000)',
       },
     },
     {
       color: 'secondary',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $secondary1000, $secondary800)',
+        background: 'linear-gradient(to right, $secondary1000, $teritary1000)',
       },
     },
     {
       color: 'teritary',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $teritary1000, $teritary800)',
+        background: 'linear-gradient(to right, $teritary1000, $primary1000)',
       },
     },
     {
       color: 'success',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $success1000, $success800)',
+        background: 'linear-gradient(to right, $success1000, $primary1000)',
       },
     },
     {
       color: 'warning',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $warning1000, $warning800)',
+        background: 'linear-gradient(to right, $warning1000, $error1000)',
       },
     },
     {
       color: 'error',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $error1000, $error800)',
+        background: 'linear-gradient(to right, $error1000, $warning800)',
       },
     },
   ],
