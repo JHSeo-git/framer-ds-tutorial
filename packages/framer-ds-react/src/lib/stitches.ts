@@ -11,6 +11,7 @@ const {
   styled,
   theme: lightTheme,
   createTheme,
+  getCssText,
 } = createStitches({
   media: {
     sm: themes.lightTheme.mediaQuery.sm,
@@ -409,4 +410,4 @@ const darkTheme = createTheme({
 })
 
 export const darkThemeClassName = darkTheme.className
-export { styled, lightTheme, darkTheme }
+export { styled, getCssText, lightTheme, darkTheme }

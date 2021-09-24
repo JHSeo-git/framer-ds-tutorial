@@ -987,7 +987,7 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         xl: import("@stitches/react/types/theme").Token<"xl", string, "space", "">;
         '2xl': import("@stitches/react/types/theme").Token<"2xl", string, "space", "">;
     };
-};
+}, getCssText: () => string;
 declare const darkTheme: string & {
     className: string;
     selector: string;
@@ -1103,4 +1103,4 @@ declare const darkTheme: string & {
     };
 }, "">;
 export declare const darkThemeClassName: string;
-export { styled, lightTheme, darkTheme };
+export { styled, getCssText, lightTheme, darkTheme };

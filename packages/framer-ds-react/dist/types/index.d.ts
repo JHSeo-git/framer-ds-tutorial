@@ -1,4 +1,4 @@
-export { darkThemeClassName } from './lib/stitches';
+export { getCssText, darkThemeClassName } from './lib/stitches';
 export { Box } from './components/Box';
 export { Button } from './components/Button';
 export { Card } from './components/Card';

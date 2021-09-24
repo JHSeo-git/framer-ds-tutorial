@@ -1,5 +1,5 @@
 // lib
-export { darkThemeClassName } from './lib/stitches'
+export { getCssText, darkThemeClassName } from './lib/stitches'
 
 // Components
 export { Box } from './components/Box'

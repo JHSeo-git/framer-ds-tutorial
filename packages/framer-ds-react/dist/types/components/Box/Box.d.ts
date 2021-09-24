@@ -1,9 +1,4 @@
-import React from 'react';
-export declare type BoxProps = {
-    children: React.ReactNode;
-} & React.ComponentProps<typeof BaseBox>;
-declare const Box: ({ children, ...rest }: BoxProps) => JSX.Element;
-declare const BaseBox: import("@stitches/react/types/styled-component").StyledComponent<"div", {}, {
+declare const Box: import("@stitches/react/types/styled-component").StyledComponent<"div", {}, {
     sm: string;
     md: string;
     lg: string;
