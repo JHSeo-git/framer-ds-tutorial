@@ -2,8 +2,9 @@ import React from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
-import { darkThemeClassName } from '@framerds/react'
+import { Box, darkThemeClassName } from '@framerds/react'
 import '../styles/globalCss.css'
+import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +19,26 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <Component {...pageProps} />
+      <Box
+        css={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          boxShadow: '0 0 0 1px $mono900',
+          zIndex: '$5',
+          backgroundColor: '$loContrast',
+        }}
+      >
+        <Header />
+      </Box>
+      <Box
+        css={{
+          py: '$space65',
+        }}
+      >
+        <Component {...pageProps} />
+      </Box>
     </ThemeProvider>
   )
 }

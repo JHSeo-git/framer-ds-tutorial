@@ -5,9 +5,11 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document'
+import { getCssText } from '@framerds/react'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
+    getCssText
     const initialProps = await Document.getInitialProps(ctx)
 
     return initialProps
@@ -17,6 +19,10 @@ class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
+          <style
+            id="stitches"
+            dangerouslySetInnerHTML={{ __html: getCssText() }}
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

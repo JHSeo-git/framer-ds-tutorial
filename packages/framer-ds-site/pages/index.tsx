@@ -1,6 +1,5 @@
 import React from 'react'
 import type { NextPage } from 'next'
-import { useTheme } from 'next-themes'
 import {
   Box,
   Button,
@@ -13,7 +12,6 @@ import {
 } from '@framerds/react'
 
 const Home: NextPage = () => {
-  const { theme, setTheme } = useTheme()
   return (
     <Box css={{ bc: '$loContrast' }}>
       <Section>
@@ -27,21 +25,53 @@ const Home: NextPage = () => {
           >
             Button
           </Heading>
-          <Flex gap="md">
-            <Button
-              kind="grayScale"
-              shape="pill"
-              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            >
-              Toggle Theme
+          <Flex gap="xl" css={{ mb: '$space20' }}>
+            <Button kind="grayScale" size="small" shape="round">
+              Button
             </Button>
-            <Button kind="primary" shape="pill">
+            <Button kind="grayScale" shape="round">
+              Button
+            </Button>
+            <Button kind="grayScale" size="large" shape="round">
+              Button
+            </Button>
+          </Flex>
+          <Flex gap="xl" css={{ mb: '$space20' }}>
+            <Button kind="grayScale" shape="round">
+              Button
+            </Button>
+            <Button kind="grayScale" shape="pill">
+              Button
+            </Button>
+            <Button kind="grayScale" shape="circle">
+              Button
+            </Button>
+          </Flex>
+          <Flex gap="xl" css={{ mb: '$space20' }}>
+            <Button kind="grayScale" disabled shape="round">
+              Button
+            </Button>
+            <Button kind="grayScale" state="active" shape="round">
+              Button
+            </Button>
+            <Button kind="grayScale" state="ghost" shape="round">
+              Button
+            </Button>
+            <Button kind="grayScale" state="waiting" shape="round">
+              Button
+            </Button>
+          </Flex>
+          <Flex gap="xl" css={{ mb: '$space20' }}>
+            <Button kind="grayScale" size="small" shape="round">
+              Button
+            </Button>
+            <Button kind="primary" size="small" shape="round">
               Primary
             </Button>
-            <Button kind="secondary" shape="pill">
+            <Button kind="secondary" size="small" shape="round">
               Secondary
             </Button>
-            <Button kind="teritary" shape="pill">
+            <Button kind="teritary" size="small" shape="round">
               Teritary
             </Button>
           </Flex>
