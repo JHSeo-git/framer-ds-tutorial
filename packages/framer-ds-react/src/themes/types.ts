@@ -51,6 +51,19 @@ type StitchesFoundationColors = {
   primary11: string
   primary12: string
 
+  primaryA1: string
+  primaryA2: string
+  primaryA3: string
+  primaryA4: string
+  primaryA5: string
+  primaryA6: string
+  primaryA7: string
+  primaryA8: string
+  primaryA9: string
+  primaryA10: string
+  primaryA11: string
+  primaryA12: string
+
   secondary1: string
   secondary2: string
   secondary3: string
@@ -63,6 +76,19 @@ type StitchesFoundationColors = {
   secondary10: string
   secondary11: string
   secondary12: string
+
+  secondaryA1: string
+  secondaryA2: string
+  secondaryA3: string
+  secondaryA4: string
+  secondaryA5: string
+  secondaryA6: string
+  secondaryA7: string
+  secondaryA8: string
+  secondaryA9: string
+  secondaryA10: string
+  secondaryA11: string
+  secondaryA12: string
 
   teritary1: string
   teritary2: string
@@ -77,6 +103,19 @@ type StitchesFoundationColors = {
   teritary11: string
   teritary12: string
 
+  teritaryA1: string
+  teritaryA2: string
+  teritaryA3: string
+  teritaryA4: string
+  teritaryA5: string
+  teritaryA6: string
+  teritaryA7: string
+  teritaryA8: string
+  teritaryA9: string
+  teritaryA10: string
+  teritaryA11: string
+  teritaryA12: string
+
   mono1: string
   mono2: string
   mono3: string
@@ -89,6 +128,19 @@ type StitchesFoundationColors = {
   mono10: string
   mono11: string
   mono12: string
+
+  monoA1: string
+  monoA2: string
+  monoA3: string
+  monoA4: string
+  monoA5: string
+  monoA6: string
+  monoA7: string
+  monoA8: string
+  monoA9: string
+  monoA10: string
+  monoA11: string
+  monoA12: string
 
   success1: string
   success2: string
@@ -103,6 +155,19 @@ type StitchesFoundationColors = {
   success11: string
   success12: string
 
+  successA1: string
+  successA2: string
+  successA3: string
+  successA4: string
+  successA5: string
+  successA6: string
+  successA7: string
+  successA8: string
+  successA9: string
+  successA10: string
+  successA11: string
+  successA12: string
+
   warning1: string
   warning2: string
   warning3: string
@@ -116,6 +181,19 @@ type StitchesFoundationColors = {
   warning11: string
   warning12: string
 
+  warningA1: string
+  warningA2: string
+  warningA3: string
+  warningA4: string
+  warningA5: string
+  warningA6: string
+  warningA7: string
+  warningA8: string
+  warningA9: string
+  warningA10: string
+  warningA11: string
+  warningA12: string
+
   error1: string
   error2: string
   error3: string
@@ -128,6 +206,19 @@ type StitchesFoundationColors = {
   error10: string
   error11: string
   error12: string
+
+  errorA1: string
+  errorA2: string
+  errorA3: string
+  errorA4: string
+  errorA5: string
+  errorA6: string
+  errorA7: string
+  errorA8: string
+  errorA9: string
+  errorA10: string
+  errorA11: string
+  errorA12: string
 }
 
 export type StitchesColors = StitchesFoundationColors & SemanticColors

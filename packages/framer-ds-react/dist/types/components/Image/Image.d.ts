@@ -1,14 +1,4 @@
-import React, { ElementType } from 'react';
-export declare type TextProps = {
-    children: React.ReactNode;
-    as?: ElementType;
-} & React.ComponentProps<typeof BaseText>;
-declare const Text: ({ children, as, ...rest }: TextProps) => JSX.Element;
-declare const BaseText: import("@stitches/react/types/styled-component").StyledComponent<"span", {
-    size?: "4xl" | "2xl" | "xl" | "sm" | "xs" | "lg" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "3xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
-    color?: "grayScale" | "primary" | "secondary" | "teritary" | "success" | "warning" | "error" | undefined;
-    gradient?: boolean | "true" | undefined;
-}, {
+declare const Image: import("@stitches/react/types/styled-component").StyledComponent<"img", {}, {
     sm: string;
     md: string;
     lg: string;
@@ -470,4 +460,4 @@ declare const BaseText: import("@stitches/react/types/styled-component").StyledC
         backgroundClip: import("@stitches/react").PropertyValue<"backgroundClip">;
     };
 }>>;
-export default Text;
+export default Image;

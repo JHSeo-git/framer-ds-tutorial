@@ -51,7 +51,7 @@ const BaseButton = styled(motion.button, {
   lineHeight: '$base',
 
   // sizes
-  height: '$size45',
+  height: '$size35',
   px: '$space20',
 
   '&:disabled': {
@@ -81,10 +81,10 @@ const BaseButton = styled(motion.button, {
           boxShadow: 'inset 0 0 0 1px $colors$mono9',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors&mono9',
+          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
         },
         '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors&mono9',
+          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
         },
       },
       primary: {
@@ -103,11 +103,11 @@ const BaseButton = styled(motion.button, {
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors&primary9',
+            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors$primary9',
         },
         '&:focus-visible': {
           boxShadow:
-            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors&primary9',
+            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors$primary9',
         },
       },
       secondary: {
@@ -126,11 +126,11 @@ const BaseButton = styled(motion.button, {
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors&secondary9',
+            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors$secondary9',
         },
         '&:focus-visible': {
           boxShadow:
-            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors&secondary9',
+            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors$secondary9',
         },
       },
       teritary: {
@@ -149,11 +149,11 @@ const BaseButton = styled(motion.button, {
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors&teritary9',
+            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors$teritary9',
         },
         '&:focus-visible': {
           boxShadow:
-            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors&teritary9',
+            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors$teritary9',
         },
       },
       success: {
@@ -172,11 +172,11 @@ const BaseButton = styled(motion.button, {
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors&success9',
+            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors$success9',
         },
         '&:focus-visible': {
           boxShadow:
-            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors&success9',
+            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors$success9',
         },
       },
       warning: {
@@ -195,11 +195,11 @@ const BaseButton = styled(motion.button, {
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors&warning9',
+            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors$warning9',
         },
         '&:focus-visible': {
           boxShadow:
-            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors&warning9',
+            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors$warning9',
         },
       },
       error: {
@@ -217,10 +217,50 @@ const BaseButton = styled(motion.button, {
           boxShadow: 'inset 0 0 0 1px $colors$error9',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors&error9',
+          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors$error9',
         },
         '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors&error9',
+          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors$error9',
+        },
+      },
+      transparentWhite: {
+        backgroundColor: 'hsla(0,100%,100%,0.2)',
+        color: 'white',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: 'hsla(0,100%,100%,0.25)',
+          },
+        },
+        '&:active': {
+          backgroundColor: 'hsla(0,100%,100%,0.3)',
+        },
+        '&:fucus': {
+          boxShadow:
+            'inset 0 0 0 1px hsla(0,100%,100%,0.35), 0 0 0 1px hsla(0,100%,100%,0.35)',
+        },
+        '&:fucus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px hsla(0,100%,100%,0.35), 0 0 0 1px hsla(0,100%,100%,0.35)',
+        },
+      },
+      transparentBlack: {
+        backgroundColor: 'hsla(0,0%,0%,0.2)',
+        color: 'black',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: 'hsla(0,0%,0%,0.25)',
+          },
+        },
+        '&:active': {
+          backgroundColor: 'hsla(0,0%,0%,0.3)',
+        },
+        '&:fucus': {
+          boxShadow:
+            'inset 0 0 0 1px hsla(0,0%,0%,0.35), 0 0 0 1px hsla(0,0%,0%,0.35)',
+        },
+        '&:fucus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px hsla(0,0%,0%,0.35), 0 0 0 1px hsla(0,0%,0%,0.35)',
         },
       },
     },
@@ -238,12 +278,12 @@ const BaseButton = styled(motion.button, {
     size: {
       small: {
         fontSize: '$sm',
-        height: '$size35',
+        height: '$size25',
         px: '$space10',
       },
       large: {
         fontSize: '$xl',
-        height: '$size65',
+        height: '$size45',
         px: '$space35',
       },
     },
@@ -261,10 +301,10 @@ const BaseButton = styled(motion.button, {
             backgroundColor: '$mono5',
           },
           '&:focus': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
           },
           '&:focus-visible': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
           },
         },
       },
@@ -282,21 +322,18 @@ const BaseButton = styled(motion.button, {
             backgroundColor: '$mono5',
           },
           '&:focus': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
           },
           '&:focus-visible': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
           },
         },
-      },
-      transperentWhite: {
-        backgroundColor: '$shadowLight',
       },
     },
     ghost: {
       true: {
         backgroundColor: '$transparent',
-        boxShadow: 'none',
+        boxShadow: 'revert',
       },
     },
   },
@@ -309,8 +346,162 @@ const BaseButton = styled(motion.button, {
         color: '$hiContrast',
         '@hover': {
           '&:hover': {
-            backgroundColor: '',
+            backgroundColor: '$monoA3',
+            boxShadow: 'none',
           },
+        },
+        '&:active': {
+          backgroundColor: '$monoA4',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $colors$monoA9, 0 0 0 1px $colors$monoA9',
+        },
+        '&:focus-visible': {
+          boxShadow: 'inset 0 0 0 1px $colors$monoA9, 0 0 0 1px $colors$monoA9',
+        },
+      },
+    },
+    {
+      kind: 'primary',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$primaryA3',
+            boxShadow: 'none',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$primaryA4',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$primaryA9, 0 0 0 1px $colors$primaryA9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$primaryA9, 0 0 0 1px $colors$primaryA9',
+        },
+      },
+    },
+    {
+      kind: 'secondary',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$secondaryA3',
+            boxShadow: 'none',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$secondaryA4',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$secondaryA9, 0 0 0 1px $colors$secondaryA9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$secondaryA9, 0 0 0 1px $colors$secondaryA9',
+        },
+      },
+    },
+    {
+      kind: 'teritary',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$teritaryA3',
+            boxShadow: 'none',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$teritaryA4',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$teritaryA9, 0 0 0 1px $colors$teritaryA9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$teritaryA9, 0 0 0 1px $colors$teritaryA9',
+        },
+      },
+    },
+    {
+      kind: 'success',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$successA3',
+            boxShadow: 'none',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$successA4',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$successA9, 0 0 0 1px $colors$successA9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$successA9, 0 0 0 1px $colors$successA9',
+        },
+      },
+    },
+    {
+      kind: 'warning',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$warningA3',
+            boxShadow: 'none',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$warningA4',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$warningA9, 0 0 0 1px $colors$warningA9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$warningA9, 0 0 0 1px $colors$warningA9',
+        },
+      },
+    },
+    {
+      kind: 'error',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$errorA3',
+            boxShadow: 'none',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$errorA4',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$errorA9, 0 0 0 1px $colors$errorA9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$errorA9, 0 0 0 1px $colors$errorA9',
         },
       },
     },
