@@ -13,7 +13,7 @@ const Header = (props: HeaderProps) => {
           <NextLink href="/" passHref>
             <Box
               as="a"
-              css={{ color: '$secondary700', textDecoration: 'unset' }}
+              css={{ color: '$secondary800', textDecoration: 'unset' }}
             >
               <FDSLogo width="32" height="32" label="FDS Homepage" />
             </Box>
