@@ -11,10 +11,7 @@ const Header = (props: HeaderProps) => {
       <Container>
         <Flex align="center" justify="between" css={{ height: '$size65' }}>
           <NextLink href="/" passHref>
-            <Box
-              as="a"
-              css={{ color: '$secondary800', textDecoration: 'unset' }}
-            >
+            <Box as="a" css={{ color: '$secondary9', textDecoration: 'unset' }}>
               <FDSLogo width="32" height="32" label="FDS Homepage" />
             </Box>
           </NextLink>

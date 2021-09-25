@@ -25,45 +25,42 @@ const Home: NextPage = () => {
           >
             Button
           </Heading>
-          <Flex gap="xl" css={{ mb: '$space20' }}>
+          <Flex gap="xl" css={{ mb: '$space25' }}>
             <Button kind="grayScale" size="small" shape="round">
-              Button
+              Small
             </Button>
             <Button kind="grayScale" shape="round">
-              Button
+              Normal
             </Button>
             <Button kind="grayScale" size="large" shape="round">
-              Button
+              Large
             </Button>
           </Flex>
-          <Flex gap="xl" css={{ mb: '$space20' }}>
+          <Flex gap="xl" css={{ mb: '$space25' }}>
             <Button kind="grayScale" shape="round">
-              Button
+              Round
             </Button>
             <Button kind="grayScale" shape="pill">
-              Button
+              Pill
             </Button>
             <Button kind="grayScale" shape="circle">
-              Button
+              Circle
             </Button>
           </Flex>
-          <Flex gap="xl" css={{ mb: '$space20' }}>
+          <Flex gap="xl" css={{ mb: '$space25' }}>
             <Button kind="grayScale" disabled shape="round">
-              Button
+              Disabled
             </Button>
             <Button kind="grayScale" state="active" shape="round">
-              Button
+              Active
             </Button>
-            <Button kind="grayScale" state="ghost" shape="round">
-              Button
-            </Button>
-            <Button kind="grayScale" state="waiting" shape="round">
-              Button
+            <Button kind="grayScale" disabled state="waiting" shape="round">
+              Waiting
             </Button>
           </Flex>
-          <Flex gap="xl" css={{ mb: '$space20' }}>
+          <Flex gap="xl" css={{ mb: '$space25' }}>
             <Button kind="grayScale" size="small" shape="round">
-              Button
+              GrayScale
             </Button>
             <Button kind="primary" size="small" shape="round">
               Primary
