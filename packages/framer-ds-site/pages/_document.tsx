@@ -9,7 +9,6 @@ import { getCssText } from '@framerds/react'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    getCssText
     const initialProps = await Document.getInitialProps(ctx)
 
     return initialProps
