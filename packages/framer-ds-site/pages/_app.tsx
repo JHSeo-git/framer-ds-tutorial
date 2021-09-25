@@ -3,8 +3,9 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
 import { Box, darkThemeClassName } from '@framerds/react'
-import '../styles/globalCss.css'
 import Header from '../components/Header'
+
+import '../styles/globalCss.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

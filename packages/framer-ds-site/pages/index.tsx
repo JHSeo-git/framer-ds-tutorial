@@ -9,6 +9,7 @@ import {
   Section,
   Text,
   Heading,
+  Image,
 } from '@framerds/react'
 
 const Home: NextPage = () => {
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
           >
             Button
           </Heading>
-          <Flex gap="xl" css={{ mb: '$space25' }}>
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
             <Button kind="grayScale" size="small" shape="round">
               Small
             </Button>
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
               Large
             </Button>
           </Flex>
-          <Flex gap="xl" css={{ mb: '$space25' }}>
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
             <Button kind="grayScale" shape="round">
               Round
             </Button>
@@ -47,7 +48,7 @@ const Home: NextPage = () => {
               Circle
             </Button>
           </Flex>
-          <Flex gap="xl" css={{ mb: '$space25' }}>
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
             <Button kind="grayScale" disabled shape="round">
               Disabled
             </Button>
@@ -58,20 +59,108 @@ const Home: NextPage = () => {
               Waiting
             </Button>
           </Flex>
-          <Flex gap="xl" css={{ mb: '$space25' }}>
-            <Button kind="grayScale" size="small" shape="round">
-              GrayScale
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
+            <Button kind="grayScale" shape="round">
+              Base
             </Button>
-            <Button kind="primary" size="small" shape="round">
+            <Button kind="primary" shape="round">
               Primary
             </Button>
-            <Button kind="secondary" size="small" shape="round">
+            <Button kind="secondary" shape="round">
               Secondary
             </Button>
-            <Button kind="teritary" size="small" shape="round">
+            <Button kind="teritary" shape="round">
               Teritary
             </Button>
           </Flex>
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
+            <Button kind="grayScale" shape="round">
+              Base
+            </Button>
+            <Button kind="success" shape="round">
+              Success
+            </Button>
+            <Button kind="warning" shape="round">
+              Warning
+            </Button>
+            <Button kind="error" shape="round">
+              Error
+            </Button>
+          </Flex>
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
+            <Button kind="grayScale" shape="round" ghost>
+              Ghost
+            </Button>
+            <Button kind="primary" shape="round" ghost>
+              Primary
+            </Button>
+            <Button kind="secondary" shape="round" ghost>
+              Secondary
+            </Button>
+            <Button kind="teritary" shape="round" ghost>
+              Teritary
+            </Button>
+          </Flex>
+          <Flex gap="xl" wrap="wrap" css={{ mb: '$space45' }}>
+            <Button kind="grayScale" shape="round" ghost>
+              Ghost
+            </Button>
+            <Button kind="success" shape="round" ghost>
+              Success
+            </Button>
+            <Button kind="warning" shape="round" ghost>
+              Warning
+            </Button>
+            <Button kind="error" shape="round" ghost>
+              Error
+            </Button>
+          </Flex>
+          <Box
+            css={{
+              position: 'relative',
+              mb: '$space45',
+            }}
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1632560354926-21886c0e811c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMjU4OTcwOA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+              alt="darken unsplash"
+            />
+            <Box
+              css={{
+                position: 'absolute',
+                bottom: 0,
+                right: 0,
+                m: '$space25',
+              }}
+            >
+              <Button kind="transparentWhite" shape="round">
+                Transparent
+              </Button>
+            </Box>
+          </Box>
+          <Box
+            css={{
+              position: 'relative',
+              mb: '$space45',
+            }}
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1632338528496-877ff975d1a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMjU5MDI2MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+              alt="darken unsplash"
+            />
+            <Box
+              css={{
+                position: 'absolute',
+                bottom: 0,
+                right: 0,
+                m: '$space25',
+              }}
+            >
+              <Button kind="transparentBlack" shape="round">
+                Transparent
+              </Button>
+            </Box>
+          </Box>
         </Container>
       </Section>
       <Section>
