@@ -109,25 +109,25 @@ const BaseText = styled('span', {
     },
     color: {
       grayScale: {
-        color: '$mono1100',
+        color: '$mono12',
       },
       primary: {
-        color: '$primary1000',
+        color: '$primary11',
       },
       secondary: {
-        color: '$secondary1000',
+        color: '$secondary11',
       },
       teritary: {
-        color: '$teritary1000',
+        color: '$teritary11',
       },
       success: {
-        color: '$success1000',
+        color: '$success11',
       },
       warning: {
-        color: '$warning1000',
+        color: '$warning11',
       },
       error: {
-        color: '$error1000',
+        color: '$error11',
       },
     },
     gradient: {
@@ -143,49 +143,49 @@ const BaseText = styled('span', {
       color: 'grayScale',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $mono900, $mono1100)',
+        background: 'linear-gradient(to right, $mono10, $mono12)',
       },
     },
     {
       color: 'primary',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $primary1000, $secondary1000)',
+        background: 'linear-gradient(to right, $primary11, $secondary11)',
       },
     },
     {
       color: 'secondary',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $secondary1000, $teritary1000)',
+        background: 'linear-gradient(to right, $secondary11, $teritary11)',
       },
     },
     {
       color: 'teritary',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $teritary1000, $primary1000)',
+        background: 'linear-gradient(to right, $teritary11, $primary11)',
       },
     },
     {
       color: 'success',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $success1000, $primary1000)',
+        background: 'linear-gradient(to right, $success11, $primary11)',
       },
     },
     {
       color: 'warning',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $warning1000, $error1000)',
+        background: 'linear-gradient(to right, $warning11, $error11)',
       },
     },
     {
       color: 'error',
       gradient: 'true',
       css: {
-        background: 'linear-gradient(to right, $error1000, $warning800)',
+        background: 'linear-gradient(to right, $error11, $warning11)',
       },
     },
   ],

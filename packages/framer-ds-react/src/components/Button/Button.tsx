@@ -55,88 +55,172 @@ const BaseButton = styled(motion.button, {
   px: '$space20',
 
   '&:disabled': {
-    backgroundColor: '$mono100',
-    boxShadow: 'inset 0 0 0 1px $mono600',
-    color: '$mono700',
+    backgroundColor: '$mono3',
+    boxShadow: 'inset 0 0 0 1px $colors$mono7',
+    color: '$mono8',
     pointerEvents: 'none',
   },
 
   defaultVariants: {
     kind: 'grayScale',
-    type: 'button',
   },
   variants: {
     kind: {
       grayScale: {
-        backgroundColor: '$mono300',
-        color: '$mono1100',
-        '&:hover': {
-          backgroundColor: '$mono500',
-          boxShadow: 'inset 0 0 0 1px $mono500',
+        backgroundColor: '$mono4',
+        color: '$mono11',
+        boxShadow: 'inset 0 0 0 1px $colors$mono7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$mono6',
+            boxShadow: 'inset 0 0 0 1px $colors$mono9',
+          },
         },
         '&:active': {
-          backgroundColor: '$mono700',
-          boxShadow: 'inset 0 0 0 1px $mono500',
+          backgroundColor: '$mono8',
+          boxShadow: 'inset 0 0 0 1px $colors$mono9',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $mono500, 0 0 0 1px &mono500',
+          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors&mono9',
         },
         '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $mono500, 0 0 0 1px &mono500',
+          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors&mono9',
         },
       },
       primary: {
-        backgroundColor: '$primary300',
-        color: '$mono1100',
-        '&:hover': {
-          backgroundColor: '$primary500',
-          boxShadow: 'inset 0 0 0 1px $primary500',
+        backgroundColor: '$primary4',
+        color: '$primary11',
+        boxShadow: 'inset 0 0 0 1px $colors$primary7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$primary6',
+            boxShadow: 'inset 0 0 0 1px $colors$primary8',
+          },
         },
         '&:active': {
-          backgroundColor: '$primary700',
-          boxShadow: 'inset 0 0 0 1px $primary500',
+          backgroundColor: '$primary8',
+          boxShadow: 'inset 0 0 0 1px $colors$primary9',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $primary500, 0 0 0 1px &primary500',
+          boxShadow:
+            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors&primary9',
         },
         '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $primary500, 0 0 0 1px &primary500',
+          boxShadow:
+            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors&primary9',
         },
       },
       secondary: {
-        backgroundColor: '$secondary300',
-        color: '$mono1100',
-        '&:hover': {
-          backgroundColor: '$secondary500',
-          boxShadow: 'inset 0 0 0 1px $secondary500',
+        backgroundColor: '$secondary4',
+        color: '$secondary11',
+        boxShadow: 'inset 0 0 0 1px $colors$secondary7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$secondary6',
+            boxShadow: 'inset 0 0 0 1px $colors$secondary8',
+          },
         },
         '&:active': {
-          backgroundColor: '$secondary700',
-          boxShadow: 'inset 0 0 0 1px $secondary500',
+          backgroundColor: '$secondary8',
+          boxShadow: 'inset 0 0 0 1px $colors$secondary9',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $secondary500, 0 0 0 1px &secondary500',
+          boxShadow:
+            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors&secondary9',
         },
         '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $secondary500, 0 0 0 1px &secondary500',
+          boxShadow:
+            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors&secondary9',
         },
       },
       teritary: {
-        backgroundColor: '$teritary300',
-        color: '$mono1100',
-        '&:hover': {
-          backgroundColor: '$teritary500',
-          boxShadow: 'inset 0 0 0 1px $teritary500',
+        backgroundColor: '$teritary4',
+        color: '$teritary11',
+        boxShadow: 'inset 0 0 0 1px $colors$teritary7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$teritary6',
+            boxShadow: 'inset 0 0 0 1px $colors$teritary8',
+          },
         },
         '&:active': {
-          backgroundColor: '$teritary700',
-          boxShadow: 'inset 0 0 0 1px $teritary500',
+          backgroundColor: '$teritary8',
+          boxShadow: 'inset 0 0 0 1px $colors$teritary9',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $teritary500, 0 0 0 1px &teritary500',
+          boxShadow:
+            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors&teritary9',
         },
         '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $teritary500, 0 0 0 1px &teritary500',
+          boxShadow:
+            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors&teritary9',
+        },
+      },
+      success: {
+        backgroundColor: '$success4',
+        color: '$success11',
+        boxShadow: 'inset 0 0 0 1px $colors$success7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$success6',
+            boxShadow: 'inset 0 0 0 1px $colors$success8',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$success8',
+          boxShadow: 'inset 0 0 0 1px $colors$success9',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors&success9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors&success9',
+        },
+      },
+      warning: {
+        backgroundColor: '$warning4',
+        color: '$warning11',
+        boxShadow: 'inset 0 0 0 1px $colors$warning7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$warning6',
+            boxShadow: 'inset 0 0 0 1px $colors$warning8',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$warning8',
+          boxShadow: 'inset 0 0 0 1px $colors$warning9',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors&warning9',
+        },
+        '&:focus-visible': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors&warning9',
+        },
+      },
+      error: {
+        backgroundColor: '$error4',
+        color: '$error11',
+        boxShadow: 'inset 0 0 0 1px $colors$error7',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$error6',
+            boxShadow: 'inset 0 0 0 1px $colors$error8',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$error8',
+          boxShadow: 'inset 0 0 0 1px $colors$error9',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors&error9',
+        },
+        '&:focus-visible': {
+          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors&error9',
         },
       },
     },
@@ -151,16 +235,6 @@ const BaseButton = styled(motion.button, {
         borderRadius: '$pill',
       },
     },
-    type: {
-      button: {},
-      submit: {},
-      link: {},
-    },
-    state: {
-      active: {},
-      waiting: {},
-      ghost: {},
-    },
     size: {
       small: {
         fontSize: '$sm',
@@ -173,7 +247,74 @@ const BaseButton = styled(motion.button, {
         px: '$space35',
       },
     },
+    state: {
+      active: {
+        backgroundColor: '$mono4',
+        boxShadow: 'inset 0 0 0 1px $colors$mono7',
+        color: '$mono12',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$mono5',
+            boxShadow: 'inset 0 0 0 1px $colors$mono8',
+          },
+          '&:active': {
+            backgroundColor: '$mono5',
+          },
+          '&:focus': {
+            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+          },
+          '&:focus-visible': {
+            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+          },
+        },
+      },
+      waiting: {
+        backgroundColor: '$mono4',
+        boxShadow: 'inset 0 0 0 1px $colors$mono7',
+        color: '$transparent',
+        pointerEvents: 'none',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '$mono5',
+            boxShadow: 'inset 0 0 0 1px $colors$mono8',
+          },
+          '&:active': {
+            backgroundColor: '$mono5',
+          },
+          '&:focus': {
+            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+          },
+          '&:focus-visible': {
+            boxShadow: 'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors&mono8',
+          },
+        },
+      },
+      transperentWhite: {
+        backgroundColor: '$shadowLight',
+      },
+    },
+    ghost: {
+      true: {
+        backgroundColor: '$transparent',
+        boxShadow: 'none',
+      },
+    },
   },
+  compoundVariants: [
+    {
+      kind: 'grayScale',
+      ghost: 'true',
+      css: {
+        backgroundColor: '$transparent',
+        color: '$hiContrast',
+        '@hover': {
+          '&:hover': {
+            backgroundColor: '',
+          },
+        },
+      },
+    },
+  ],
 })
 
 export default Button

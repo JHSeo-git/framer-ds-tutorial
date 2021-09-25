@@ -55,7 +55,7 @@ const BaseCard = styled(motion.div, {
           '&:focus': {
             '&::before': {
               boxShadow:
-                'inset 0 0 0 1px $colors$mono700, 0 0 0 1px $colors$mono700',
+                'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors$mono8',
             },
           },
         },
@@ -90,7 +90,7 @@ const BaseCard = styled(motion.div, {
           },
           '&:focus': {
             boxShadow:
-              'inset 0 0 0 1px $colors$primary500, 0 0 0 1px $colors$primary500',
+              'inset 0 0 0 1px $colors$primary6, 0 0 0 1px $colors$primary6',
           },
         },
       },
@@ -104,7 +104,7 @@ const BaseCard = styled(motion.div, {
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$primary500, 0 0 0 1px $colors$primary500',
+            'inset 0 0 0 1px $colors$primary6, 0 0 0 1px $colors$primary6',
         },
       },
     },
