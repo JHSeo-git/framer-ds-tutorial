@@ -1,7 +1,8 @@
 import NextLink from 'next/link'
-import { Box, Container, Flex } from '@framerds/react'
+import { Box, Button, Container, Flex } from '@framerds/react'
 import DarkThemeButton from './DarkThemeButton'
-import FDSLogo from './FDSLogo'
+import Logo from './Logo'
+import IconMenu from './icons/IconMenu'
 
 export type HeaderProps = {} & React.ComponentProps<typeof Flex>['css']
 
@@ -16,10 +17,25 @@ const Header = ({ height }: HeaderProps) => {
         >
           <NextLink href="/" passHref>
             <Box as="a" css={{ color: '$secondary9', textDecoration: 'unset' }}>
-              <FDSLogo width="36" height="36" label="FDS Homepage" />
+              <Logo width="36" height="36" label="FDS Homepage" />
             </Box>
           </NextLink>
-          <DarkThemeButton />
+          <Flex align="center" gap="md">
+            <DarkThemeButton />
+            <Button
+              kind="grayScale"
+              size="small"
+              shape="round"
+              ghost
+              css={{
+                '@lg': {
+                  display: 'none',
+                },
+              }}
+            >
+              <IconMenu label="FDS Menu" />
+            </Button>
+          </Flex>
         </Flex>
       </Container>
     </Box>

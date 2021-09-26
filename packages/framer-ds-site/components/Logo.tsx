@@ -1,4 +1,6 @@
-export type FDSLogoProps = {
+import AccessibleIcon from './AccessibleIcon'
+
+export type LogoProps = {
   label?: string
 } & React.ComponentPropsWithoutRef<'svg'>
 
@@ -8,24 +10,9 @@ export type FDSLogoProps = {
  *  @see https://github.com/radix-ui/primitives/blob/main/packages/react/accessible-icon/src/AccessibleIcon.tsx
  */
 
-const FDSLogo = ({ label = 'FDS Logo', ...rest }: FDSLogoProps) => {
+const Logo = ({ label = 'FDS Logo', ...rest }: LogoProps) => {
   return (
-    <>
-      <span
-        style={{
-          position: 'absolute',
-          width: 1,
-          height: 1,
-          padding: 0,
-          margin: -1,
-          overflow: 'hidden',
-          clip: 'rect(0, 0, 0, 0)',
-          whiteSpace: 'nowrap',
-          border: 0,
-        }}
-      >
-        FDS Homepage
-      </span>
+    <AccessibleIcon label={label}>
       <svg
         width="64"
         height="64"
@@ -44,8 +31,8 @@ const FDSLogo = ({ label = 'FDS Logo', ...rest }: FDSLogoProps) => {
           fill="currentColor"
         />
       </svg>
-    </>
+    </AccessibleIcon>
   )
 }
 
-export default FDSLogo
+export default Logo

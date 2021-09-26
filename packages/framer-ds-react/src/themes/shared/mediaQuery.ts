@@ -1,6 +1,6 @@
 import breakpoints from '@src/tokens/breakpoints'
 
-const media = (size: number) => `@media screen and (min-width: ${size}px)`
+const media = (size: number) => `(min-width: ${size}px)`
 
 const mediaQuery = {
   sm: media(breakpoints.sm),
