@@ -34,13 +34,13 @@ const FDSLogo = ({ label = 'FDS Logo', ...rest }: FDSLogoProps) => {
         xmlns="http://www.w3.org/2000/svg"
         {...rest}
       >
-        <circle cx="47.5" cy="16.5" r="7.5" fill="currentColor" />
-        <circle cx="17.5" cy="46.5" r="7.5" fill="currentColor" />
+        <circle cx="48.5" cy="16.5" r="7.5" fill="currentColor" />
+        <circle cx="16.5" cy="47.5" r="7.5" fill="currentColor" />
         <rect x="25" y="9" width="15" height="15" fill="currentColor" />
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M25 54C33.2843 54 40 47.2843 40 39C40 30.7157 33.2843 24 25 24V54Z"
+          d="M25 55C33.2843 55 40 48.2843 40 40C40 31.7157 33.2843 25 25 25V55Z"
           fill="currentColor"
         />
       </svg>
