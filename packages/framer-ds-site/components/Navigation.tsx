@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Box, Heading, Text } from '@framerds/react'
+import { Box, Heading } from '@framerds/react'
 
 export type NavigationProps = {}
 
