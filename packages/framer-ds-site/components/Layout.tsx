@@ -1,11 +1,22 @@
-import { Box } from '@framerds/react'
+import { Box, Text } from '@framerds/react'
+import { useRouter } from 'next/dist/client/router'
+import { colorsRoutes } from '../lib/config/colorsRoutes'
 import Header from './Header'
+import Navigation from './Navigation'
 
 export type LayoutProps = {
   children: React.ReactNode
 }
 
 const Layout = ({ children }: LayoutProps) => {
+  const router = useRouter()
+  const routerSlug = router.query.slug
+
+  let currentPageSlug: string | undefined
+  if (typeof routerSlug === 'string') {
+    currentPageSlug = routerSlug
+    console.log(currentPageSlug)
+  }
   return (
     <Box css={{ backgroundColor: '$loContrast' }}>
       <Box
@@ -37,7 +48,26 @@ const Layout = ({ children }: LayoutProps) => {
               display: 'block',
             },
           }}
-        ></Box>
+        >
+          {colorsRoutes.map((section) => (
+            <Box key={section.label} css={{ mb: '$space20' }}>
+              <Navigation.NavHeading>{section.label}</Navigation.NavHeading>
+              {section.pages.map((page) => {
+                const isDraft = page.draft
+                return (
+                  <Navigation.NavItem
+                    key={page.slug}
+                    href={`/${page.slug}`}
+                    disabled={isDraft}
+                    active={currentPageSlug === page.slug}
+                  >
+                    <Text>{page.title}</Text>
+                  </Navigation.NavItem>
+                )
+              })}
+            </Box>
+          ))}
+        </Box>
         <Box
           as="main"
           css={{
