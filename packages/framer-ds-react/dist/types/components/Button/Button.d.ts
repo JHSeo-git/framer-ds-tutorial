@@ -1,14 +1,12 @@
-import React, { ElementType } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ButtonMotion } from "../../lib/motions";
 export declare type ButtonProps = {
-    animate?: boolean;
-    as?: ElementType;
-    href?: string;
-    target?: string;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    buttonMotion?: ButtonMotion;
     children: React.ReactNode;
-} & React.ComponentProps<typeof BaseButton>;
-declare const Button: ({ animate, as, href, target, onClick, children, ...rest }: ButtonProps) => JSX.Element;
-declare const BaseButton: import("@stitches/react/types/styled-component").StyledComponent<import("framer-motion").ForwardRefComponent<HTMLButtonElement, import("framer-motion").HTMLMotionProps<"button">>, {
+} & React.ComponentProps<typeof BaseButton> & React.ComponentProps<typeof motion.button>;
+declare const Button: ({ buttonMotion, children, ...rest }: ButtonProps) => JSX.Element;
+declare const BaseButton: import("@stitches/react/types/styled-component").StyledComponent<"button", {
     kind?: "grayScale" | "primary" | "secondary" | "teritary" | "success" | "warning" | "error" | "transparentWhite" | "transparentBlack" | undefined;
     shape?: "round" | "circle" | "pill" | undefined;
     size?: "large" | "small" | undefined;

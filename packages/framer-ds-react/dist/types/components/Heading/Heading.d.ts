@@ -9,5 +9,5 @@ declare type HeadingVariants = {
 declare type HeadingProps = React.ComponentProps<typeof DEFAULT_TAG> & HeadingVariants & {
     as?: ElementType;
 };
-declare const Heading: React.ForwardRefExoticComponent<Pick<HeadingProps, "size" | "as" | "css" | "key" | keyof React.HTMLAttributes<HTMLHeadingElement> | "gradient"> & React.RefAttributes<HTMLHeadingElement>>;
+declare const Heading: React.ForwardRefExoticComponent<Pick<HeadingProps, "size" | "as" | "key" | "css" | keyof React.HTMLAttributes<HTMLHeadingElement> | "gradient"> & React.RefAttributes<HTMLHeadingElement>>;
 export default Heading;

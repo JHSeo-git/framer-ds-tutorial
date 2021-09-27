@@ -1,33 +1,31 @@
-import { styled } from '@src/lib/stitches'
+import React from 'react'
 import { motion } from 'framer-motion'
-import React, { ElementType } from 'react'
+import { ButtonMotion, buttonWhileMotion } from '@src/lib/motions'
+
+import { styled } from '@src/lib/stitches'
 
 export type ButtonProps = {
-  animate?: boolean
-  as?: ElementType
-  href?: string
-  target?: string
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
+  buttonMotion?: ButtonMotion
   children: React.ReactNode
-} & React.ComponentProps<typeof BaseButton>
+} & React.ComponentProps<typeof BaseButton> &
+  React.ComponentProps<typeof motion.button>
 
-const Button = ({
-  animate = false,
-  as = motion.button,
-  href,
-  target,
-  onClick,
-  children,
-  ...rest
-}: ButtonProps) => {
-  return (
-    <BaseButton onClick={onClick} as={as} href={href} target={target} {...rest}>
-      {children}
-    </BaseButton>
-  )
+const Button = ({ buttonMotion, children, ...rest }: ButtonProps) => {
+  if (buttonMotion) {
+    return (
+      <BaseButton
+        as={motion.button}
+        {...buttonWhileMotion(buttonMotion)}
+        {...rest}
+      >
+        {children}
+      </BaseButton>
+    )
+  }
+  return <BaseButton {...rest}>{children}</BaseButton>
 }
 
-const BaseButton = styled(motion.button, {
+const BaseButton = styled('button', {
   // reset
   all: 'unset',
   appearance: 'none',

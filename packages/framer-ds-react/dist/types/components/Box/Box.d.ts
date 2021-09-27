@@ -1,4 +1,12 @@
-declare const Box: import("@stitches/react/types/styled-component").StyledComponent<"div", {}, {
+import React, { ElementType } from 'react';
+import { motion } from 'framer-motion';
+declare type BoxProps = {
+    children: React.ReactNode;
+} & React.ComponentProps<typeof BaseBox> & React.ComponentProps<typeof motion.div> & {
+    as?: ElementType;
+};
+declare const Box: ({ children, animate, variants, ...rest }: BoxProps) => JSX.Element;
+declare const BaseBox: import("@stitches/react/types/styled-component").StyledComponent<"div", {}, {
     sm: string;
     md: string;
     lg: string;
