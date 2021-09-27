@@ -1,10 +1,10 @@
 import NextLink from 'next/link'
-import { Box, Text } from '@framerds/react'
+import { Box, Heading, Text } from '@framerds/react'
 
 export type NavigationProps = {}
 
 const NavHeading = ({ children }: { children: React.ReactNode }) => (
-  <Text
+  <Heading
     size="h4"
     css={{
       px: '$space20',
@@ -12,7 +12,7 @@ const NavHeading = ({ children }: { children: React.ReactNode }) => (
     }}
   >
     {children}
-  </Text>
+  </Heading>
 )
 
 type NavItemProps = {

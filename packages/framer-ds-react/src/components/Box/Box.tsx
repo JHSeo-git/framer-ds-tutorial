@@ -5,23 +5,33 @@ import { motionBoxAsComponent } from '@src/lib/motions'
 
 type BoxProps = {
   children: React.ReactNode
-} & React.ComponentProps<typeof BaseBox> &
-  React.ComponentProps<typeof motion.div> & {
+} & React.ComponentPropsWithoutRef<typeof BaseBox> &
+  React.ComponentPropsWithoutRef<typeof motion.div> & {
     as?: ElementType
   }
 
-const Box = ({ children, animate, variants, ...rest }: BoxProps) => {
-  if (animate && variants) {
-    const { as, ...omittedReest } = rest
+const Box = React.forwardRef<React.ElementRef<typeof BaseBox>, BoxProps>(
+  ({ children, animate, variants, ...rest }, forwardedRef) => {
+    if (animate && variants) {
+      const { as, ...omittedReest } = rest
+      return (
+        <BaseBox
+          ref={forwardedRef}
+          as={motionBoxAsComponent(as)}
+          {...omittedReest}
+        >
+          {children}
+        </BaseBox>
+      )
+    }
+
     return (
-      <BaseBox as={motionBoxAsComponent(as)} {...omittedReest}>
+      <BaseBox ref={forwardedRef} {...rest}>
         {children}
       </BaseBox>
     )
-  }
-
-  return <BaseBox {...rest}>{children}</BaseBox>
-}
+  },
+)
 
 const BaseBox = styled('div', {
   boxSizing: 'border-box',

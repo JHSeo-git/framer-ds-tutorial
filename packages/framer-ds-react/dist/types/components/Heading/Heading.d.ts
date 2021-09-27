@@ -6,7 +6,7 @@ declare type HeadingSizeVariants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 declare type HeadingVariants = {
     size?: HeadingSizeVariants;
 } & Omit<TextProps, 'size'>;
-declare type HeadingProps = React.ComponentProps<typeof DEFAULT_TAG> & HeadingVariants & {
+declare type HeadingProps = React.ComponentPropsWithoutRef<typeof DEFAULT_TAG> & HeadingVariants & {
     as?: ElementType;
 };
 declare const Heading: React.ForwardRefExoticComponent<Pick<HeadingProps, "size" | "as" | "key" | "css" | keyof React.HTMLAttributes<HTMLHeadingElement> | "gradient"> & React.RefAttributes<HTMLHeadingElement>>;
