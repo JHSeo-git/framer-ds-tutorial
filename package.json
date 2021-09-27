@@ -7,6 +7,9 @@
   "author": "JHSeo <qnfqnfqnf@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build"
+  },
   "workspaces": [
     "packages/framer-ds-react",
     "packages/framer-ds-site"
