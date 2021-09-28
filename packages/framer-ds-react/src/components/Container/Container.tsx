@@ -33,7 +33,7 @@ const BaseContainer = styled('div', {
       'w-lg': {
         maxWidth: '1145px',
       },
-      'w-xl': {
+      'w-max': {
         maxWidth: 'none',
       },
     },
