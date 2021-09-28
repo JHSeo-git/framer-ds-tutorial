@@ -1,8 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ButtonMotion, buttonWhileMotion } from '@src/lib/motions'
-
 import { styled } from '@src/lib/stitches'
+import { ButtonMotion, buttonWhileMotion } from '@src/lib/motions/motionButton'
 
 export type ButtonProps = {
   buttonMotion?: ButtonMotion
@@ -341,6 +340,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         color: '$hiContrast',
         '@hover': {
           '&:hover': {
@@ -364,6 +364,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$primaryA3',
@@ -388,6 +389,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$secondaryA3',
@@ -412,6 +414,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$teritaryA3',
@@ -436,6 +439,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$successA3',
@@ -460,6 +464,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$warningA3',
@@ -484,6 +489,7 @@ const BaseButton = styled('button', {
       ghost: 'true',
       css: {
         backgroundColor: '$transparent',
+        boxShadow: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$errorA3',
