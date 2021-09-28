@@ -1,4 +1,4 @@
-import { Theme } from "../../themes/types";
+import { Theme } from '@src/themes/types';
 import React from 'react';
 export declare type ThemeProviderProps = {
     theme: Theme;

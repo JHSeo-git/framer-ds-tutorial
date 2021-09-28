@@ -4,7 +4,7 @@ export declare type ContainerProps = {
 } & React.ComponentProps<typeof BaseContainer>;
 declare const Container: ({ children, ...rest }: ContainerProps) => JSX.Element;
 declare const BaseContainer: import("@stitches/react/types/styled-component").StyledComponent<"div", {
-    size?: "w-md" | "w-sm" | "w-lg" | "w-xl" | undefined;
+    size?: "w-md" | "w-sm" | "w-lg" | "w-max" | undefined;
 }, {
     sm: string;
     md: string;

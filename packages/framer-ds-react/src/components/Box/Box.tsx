@@ -1,10 +1,10 @@
 import React, { ElementType } from 'react'
-import { styled } from '@src/lib/stitches'
 import { motion } from 'framer-motion'
-import { motionBoxAsComponent } from '@src/lib/motions'
+import { styled } from '@src/lib/stitches'
+import { motionBoxAsComponent } from '@src/lib/motions/utils'
 
 type BoxProps = {
-  children: React.ReactNode
+  children?: React.ReactNode
 } & React.ComponentPropsWithoutRef<typeof BaseBox> &
   React.ComponentPropsWithoutRef<typeof motion.div> & {
     as?: ElementType
@@ -13,12 +13,14 @@ type BoxProps = {
 const Box = React.forwardRef<React.ElementRef<typeof BaseBox>, BoxProps>(
   ({ children, animate, variants, ...rest }, forwardedRef) => {
     if (animate && variants) {
-      const { as, ...omittedReest } = rest
+      const { as, ...omitted } = rest
       return (
         <BaseBox
           ref={forwardedRef}
+          animate={animate}
+          variants={variants}
           as={motionBoxAsComponent(as)}
-          {...omittedReest}
+          {...omitted}
         >
           {children}
         </BaseBox>

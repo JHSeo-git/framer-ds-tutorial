@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ButtonMotion } from "../../lib/motions";
+import { ButtonMotion } from '@src/lib/motions/motionButton';
 export declare type ButtonProps = {
     buttonMotion?: ButtonMotion;
     children: React.ReactNode;
