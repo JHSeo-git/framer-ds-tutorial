@@ -3,13 +3,18 @@ import { Box, Button, Container, Flex } from '@framerds/react'
 import DarkThemeButton from './DarkThemeButton'
 import Logo from './Logo'
 import IconMenu from './icons/IconMenu'
+import { useSetMenuOpen } from '../store/app'
 
 export type HeaderProps = {} & React.ComponentProps<typeof Flex>['css']
 
 const Header = ({ height }: HeaderProps) => {
+  const setMenuOpen = useSetMenuOpen()
+  const onClick = () => {
+    setMenuOpen((prev) => !prev)
+  }
   return (
     <Box as="header">
-      <Container size="w-xl">
+      <Container size="w-max">
         <Flex
           align="center"
           justify="between"
@@ -23,6 +28,7 @@ const Header = ({ height }: HeaderProps) => {
           <Flex align="center" gap="md">
             <DarkThemeButton />
             <Button
+              onClick={onClick}
               kind="grayScale"
               size="small"
               shape="round"

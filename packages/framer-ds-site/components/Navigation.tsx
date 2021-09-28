@@ -53,7 +53,6 @@ const NavItem = ({
           backgroundColor: active ? '$primary5' : '$transparent',
           minHeight: '$size45',
         }}
-        animate={{}}
       >
         {children}
       </Box>
