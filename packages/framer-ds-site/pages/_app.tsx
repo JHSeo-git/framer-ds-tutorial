@@ -2,11 +2,11 @@ import React from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'next-themes'
-import { Box, darkThemeClassName } from '@framerds/react'
-import Header from '../components/Header'
+import { darkThemeClassName } from '@framerds/react'
 
 import '../styles/globalCss.css'
-import Layout from '../components/Layout'
+import DebugObserver from '../components/DebugObserver'
+import { RecoilRoot } from 'recoil'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,10 +20,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Design System</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <RecoilRoot>
+        {process.env.NODE_ENV !== 'production' && <DebugObserver />}
 
-      <Layout>
         <Component {...pageProps} />
-      </Layout>
+      </RecoilRoot>
     </ThemeProvider>
   )
 }

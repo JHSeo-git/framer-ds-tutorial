@@ -11,10 +11,11 @@ import {
   Heading,
   Image,
 } from '@framerds/react'
+import Layout from '../components/Layout'
 
 const Home: NextPage = () => {
   return (
-    <Box css={{ bc: '$loContrast' }}>
+    <Layout>
       <Section>
         <Container>
           <Heading
@@ -312,7 +313,7 @@ const Home: NextPage = () => {
           </Flex>
         </Container>
       </Section>
-    </Box>
+    </Layout>
   )
 }
 
