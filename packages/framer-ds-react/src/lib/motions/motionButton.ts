@@ -1,5 +1,4 @@
-import { motion, TargetAndTransition, VariantLabels } from 'framer-motion'
-import { ElementType } from 'react'
+import { TargetAndTransition, VariantLabels } from 'framer-motion'
 
 export type ButtonMotion = 'scale' | 'rotate'
 export type ButtonWhileMotion = {
@@ -40,23 +39,4 @@ export const buttonWhileMotion = (
   }
 
   return whileMotion
-}
-
-function isAsMotionBox(as: any): as is AsMotionBox {
-  return as !== undefined
-}
-export type AsMotionBox = 'div' | 'ul' | 'li' | 'nav' | 'a'
-export const motionBoxAsComponent = (as: ElementType | undefined) => {
-  if (isAsMotionBox(as)) {
-    if (as === 'ul') {
-      return motion.ul
-    } else if (as === 'li') {
-      return motion.li
-    } else if (as === 'nav') {
-      return motion.nav
-    } else if (as === 'a') {
-      return motion.a
-    }
-  }
-  return motion.div
 }
