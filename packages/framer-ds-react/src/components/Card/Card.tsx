@@ -38,7 +38,7 @@ const BaseCard = styled(motion.div, {
     right: 0,
     bottom: 0,
     left: 0,
-    boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.1)',
+    brd: '$monoA6',
     borderRadius: '$radius8',
     pointerEvents: 'none',
   },
@@ -49,13 +49,12 @@ const BaseCard = styled(motion.div, {
         '@hover': {
           '&:hover': {
             '&::before': {
-              boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)',
+              brd: '$monoA8',
             },
           },
-          '&:focus': {
+          '&:focus, &:focus-visible': {
             '&::before': {
-              boxShadow:
-                'inset 0 0 0 1px $colors$mono8, 0 0 0 1px $colors$mono8',
+              brdFocus: '$mono8',
             },
           },
         },
@@ -66,8 +65,7 @@ const BaseCard = styled(motion.div, {
           'transform 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 25ms linear',
         willChange: 'transform',
         '&::before': {
-          boxShadow:
-            '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
+          boxShadow: '$shadow5',
           opacity: 0,
           transition: 'all 200ms cubic-bezier(0.22, 1, 0.36, 1)',
         },
@@ -83,14 +81,12 @@ const BaseCard = styled(motion.div, {
             transform: 'translateY(0)',
             transition: 'none',
             '&::before': {
-              boxShadow:
-                '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
+              boxShadow: '$shadow4',
               opacity: '1',
             },
           },
-          '&:focus': {
-            boxShadow:
-              'inset 0 0 0 1px $colors$primary6, 0 0 0 1px $colors$primary6',
+          '&:focus, &:focus-visible': {
+            brdFocus: '$primary6',
           },
         },
       },
@@ -98,13 +94,11 @@ const BaseCard = styled(motion.div, {
         transform: 'translateY(0)',
         transition: 'none',
         '&::before': {
-          boxShadow:
-            '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
+          boxShadow: '$shadow4',
           opacity: '1',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$primary6, 0 0 0 1px $colors$primary6',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$primary6',
         },
       },
     },

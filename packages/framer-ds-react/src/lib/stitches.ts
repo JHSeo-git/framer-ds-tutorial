@@ -57,6 +57,7 @@ const {
     zIndices: themes.lightTheme.zIndices,
     sizes: themes.lightTheme.sizes,
     space: themes.lightTheme.space,
+    shadows: themes.lightTheme.shadows,
   },
   utils: {
     p: (value: PropertyValue<'padding'>) => ({
@@ -170,6 +171,18 @@ const {
     backgroundClip: (value: PropertyValue<'backgroundClip'>) => ({
       WebkitBackgroundClip: value,
       backgroundClip: value,
+    }),
+
+    brd: (value: PropertyValue<'backgroundColor'>) => ({
+      boxShadow: `inset 0 0 0 1px $colors${value}`,
+    }),
+    brdFocus: (value: PropertyValue<'backgroundColor'>) => ({
+      boxShadow: `inset 0 0 0 1px $colors${value}, 0 0 0 1px $colors${value}`,
+    }),
+
+    // TODO: completed transition util function
+    trz: ({ property }: { property: PropertyValue<'transitionProperty'> }) => ({
+      transitionProperty: property,
     }),
   },
 })

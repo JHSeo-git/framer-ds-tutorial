@@ -53,7 +53,7 @@ const BaseButton = styled('button', {
 
   '&:disabled': {
     backgroundColor: '$mono3',
-    boxShadow: 'inset 0 0 0 1px $colors$mono7',
+    brd: '$mono7',
     color: '$mono8',
     pointerEvents: 'none',
   },
@@ -66,158 +66,127 @@ const BaseButton = styled('button', {
       grayScale: {
         backgroundColor: '$mono4',
         color: '$mono11',
-        boxShadow: 'inset 0 0 0 1px $colors$mono7',
+        brd: '$mono7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$mono6',
-            boxShadow: 'inset 0 0 0 1px $colors$mono9',
+            brd: '$mono8',
           },
         },
         '&:active': {
           backgroundColor: '$mono8',
-          boxShadow: 'inset 0 0 0 1px $colors$mono9',
+          brd: '$mono9',
         },
-        '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
-        },
-        '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$mono9',
         },
       },
       primary: {
         backgroundColor: '$primary4',
         color: '$primary11',
-        boxShadow: 'inset 0 0 0 1px $colors$primary7',
+        brd: '$primary7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$primary6',
-            boxShadow: 'inset 0 0 0 1px $colors$primary8',
+            brd: '$primary8',
           },
         },
         '&:active': {
           backgroundColor: '$primary8',
-          boxShadow: 'inset 0 0 0 1px $colors$primary9',
+          brd: '$primary9',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors$primary9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$primary9, 0 0 0 1px $colors$primary9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$primary9',
         },
       },
       secondary: {
         backgroundColor: '$secondary4',
         color: '$secondary11',
-        boxShadow: 'inset 0 0 0 1px $colors$secondary7',
+        brd: '$secondary7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$secondary6',
-            boxShadow: 'inset 0 0 0 1px $colors$secondary8',
+            brd: '$secondary8',
           },
         },
         '&:active': {
           backgroundColor: '$secondary8',
-          boxShadow: 'inset 0 0 0 1px $colors$secondary9',
+          brd: '$secondary9',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors$secondary9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$secondary9, 0 0 0 1px $colors$secondary9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$secondary9',
         },
       },
       teritary: {
         backgroundColor: '$teritary4',
         color: '$teritary11',
-        boxShadow: 'inset 0 0 0 1px $colors$teritary7',
+        brd: '$teritary7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$teritary6',
-            boxShadow: 'inset 0 0 0 1px $colors$teritary8',
+            brd: '$teritary8',
           },
         },
         '&:active': {
           backgroundColor: '$teritary8',
-          boxShadow: 'inset 0 0 0 1px $colors$teritary9',
+          brd: '$teritary9',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors$teritary9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$teritary9, 0 0 0 1px $colors$teritary9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$teritary9',
         },
       },
       success: {
         backgroundColor: '$success4',
         color: '$success11',
-        boxShadow: 'inset 0 0 0 1px $colors$success7',
+        brd: '$success7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$success6',
-            boxShadow: 'inset 0 0 0 1px $colors$success8',
+            brd: '$success8',
           },
         },
         '&:active': {
           backgroundColor: '$success8',
-          boxShadow: 'inset 0 0 0 1px $colors$success9',
+          brd: '$success7',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors$success9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$success9, 0 0 0 1px $colors$success9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$success9',
         },
       },
       warning: {
         backgroundColor: '$warning4',
         color: '$warning11',
-        boxShadow: 'inset 0 0 0 1px $colors$warning7',
+        brd: '$warning7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$warning6',
-            boxShadow: 'inset 0 0 0 1px $colors$warning8',
+            brd: '$warning8',
           },
         },
         '&:active': {
           backgroundColor: '$warning8',
-          boxShadow: 'inset 0 0 0 1px $colors$warning9',
+          brd: '$warning9',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors$warning9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$warning9, 0 0 0 1px $colors$warning9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$warning9',
         },
       },
       error: {
         backgroundColor: '$error4',
         color: '$error11',
-        boxShadow: 'inset 0 0 0 1px $colors$error7',
+        brd: '$error7',
         '@hover': {
           '&:hover': {
             backgroundColor: '$error6',
-            boxShadow: 'inset 0 0 0 1px $colors$error8',
+            brd: '$error8',
           },
         },
         '&:active': {
           backgroundColor: '$error8',
-          boxShadow: 'inset 0 0 0 1px $colors$error9',
+          brd: '$error9',
         },
-        '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors$error9',
-        },
-        '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $colors$error9, 0 0 0 1px $colors$error9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$error9',
         },
       },
       transparentWhite: {
@@ -231,13 +200,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: 'hsla(0,100%,100%,0.3)',
         },
-        '&:fucus': {
-          boxShadow:
-            'inset 0 0 0 1px hsla(0,100%,100%,0.35), 0 0 0 1px hsla(0,100%,100%,0.35)',
-        },
-        '&:fucus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px hsla(0,100%,100%,0.35), 0 0 0 1px hsla(0,100%,100%,0.35)',
+        '&:focus, &:focus-visible': {
+          brdFocus: 'hsla(0,100%,100%,0.35)',
         },
       },
       transparentBlack: {
@@ -251,13 +215,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: 'hsla(0,0%,0%,0.3)',
         },
-        '&:fucus': {
-          boxShadow:
-            'inset 0 0 0 1px hsla(0,0%,0%,0.35), 0 0 0 1px hsla(0,0%,0%,0.35)',
-        },
-        '&:fucus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px hsla(0,0%,0%,0.35), 0 0 0 1px hsla(0,0%,0%,0.35)',
+        '&:focus, &:focus-visible': {
+          brdFocus: 'hsla(0,0%,0%,0.35)',
         },
       },
     },
@@ -287,42 +246,36 @@ const BaseButton = styled('button', {
     state: {
       active: {
         backgroundColor: '$mono4',
-        boxShadow: 'inset 0 0 0 1px $colors$mono7',
+        brd: '$mono7',
         color: '$mono12',
         '@hover': {
           '&:hover': {
             backgroundColor: '$mono5',
-            boxShadow: 'inset 0 0 0 1px $colors$mono8',
+            brd: '$mono8',
           },
           '&:active': {
             backgroundColor: '$mono5',
           },
-          '&:focus': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
-          },
-          '&:focus-visible': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
+          '&:focus, &:focus-visible': {
+            brdFocus: '$mono9',
           },
         },
       },
       waiting: {
         backgroundColor: '$mono4',
-        boxShadow: 'inset 0 0 0 1px $colors$mono7',
+        brd: '$mono7',
         color: '$transparent',
         pointerEvents: 'none',
         '@hover': {
           '&:hover': {
             backgroundColor: '$mono5',
-            boxShadow: 'inset 0 0 0 1px $colors$mono8',
+            brd: '$mono8',
           },
           '&:active': {
             backgroundColor: '$mono5',
           },
-          '&:focus': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
-          },
-          '&:focus-visible': {
-            boxShadow: 'inset 0 0 0 1px $colors$mono9, 0 0 0 1px $colors$mono9',
+          '&:focus, &:focus-visible': {
+            brdFocus: '$mono9',
           },
         },
       },
@@ -351,11 +304,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$monoA4',
         },
-        '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$monoA9, 0 0 0 1px $colors$monoA9',
-        },
-        '&:focus-visible': {
-          boxShadow: 'inset 0 0 0 1px $colors$monoA9, 0 0 0 1px $colors$monoA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$monoA9',
         },
       },
     },
@@ -374,13 +324,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$primaryA4',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$primaryA9, 0 0 0 1px $colors$primaryA9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$primaryA9, 0 0 0 1px $colors$primaryA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$primaryA9',
         },
       },
     },
@@ -399,13 +344,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$secondaryA4',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$secondaryA9, 0 0 0 1px $colors$secondaryA9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$secondaryA9, 0 0 0 1px $colors$secondaryA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$secondaryA9',
         },
       },
     },
@@ -424,13 +364,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$teritaryA4',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$teritaryA9, 0 0 0 1px $colors$teritaryA9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$teritaryA9, 0 0 0 1px $colors$teritaryA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$teritaryA9',
         },
       },
     },
@@ -449,13 +384,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$successA4',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$successA9, 0 0 0 1px $colors$successA9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$successA9, 0 0 0 1px $colors$successA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$successA9',
         },
       },
     },
@@ -474,13 +404,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$warningA4',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$warningA9, 0 0 0 1px $colors$warningA9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$warningA9, 0 0 0 1px $colors$warningA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$warningA9',
         },
       },
     },
@@ -499,13 +424,8 @@ const BaseButton = styled('button', {
         '&:active': {
           backgroundColor: '$errorA4',
         },
-        '&:focus': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$errorA9, 0 0 0 1px $colors$errorA9',
-        },
-        '&:focus-visible': {
-          boxShadow:
-            'inset 0 0 0 1px $colors$errorA9, 0 0 0 1px $colors$errorA9',
+        '&:focus, &:focus-visible': {
+          brdFocus: '$errorA9',
         },
       },
     },

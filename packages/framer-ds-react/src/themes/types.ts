@@ -4,6 +4,7 @@ import { ZIndices } from '@src/tokens/zIndices'
 import { Radii } from '@src/tokens/radii'
 import { Space } from '@src/tokens/space'
 import { Sizes } from '@src/tokens/sizes'
+import { Shadows } from '@src/tokens/shadows'
 
 /**
  * Color Theme 요소 타입 정의
@@ -235,4 +236,5 @@ export type Theme = {
   radii: Radii
   space: Space
   sizes: Sizes
+  shadows: Shadows
 }
