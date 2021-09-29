@@ -326,6 +326,10 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         xl: string;
         '2xl': string;
     };
+    shadows: {
+        shadow4: string;
+        shadow5: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     p: (value: PropertyValue<'padding'>) => {
         padding: PropertyValue<"padding">;
@@ -455,6 +459,17 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
     backgroundClip: (value: PropertyValue<'backgroundClip'>) => {
         WebkitBackgroundClip: PropertyValue<"backgroundClip">;
         backgroundClip: PropertyValue<"backgroundClip">;
+    };
+    brd: (value: PropertyValue<'backgroundColor'>) => {
+        boxShadow: string;
+    };
+    brdFocus: (value: PropertyValue<'backgroundColor'>) => {
+        boxShadow: string;
+    };
+    trz: ({ property }: {
+        property: PropertyValue<'transitionProperty'>;
+    }) => {
+        transitionProperty: PropertyValue<"transitionProperty">;
     };
 }>>(type: Type, ...composers: { [K in keyof Composers]: Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -798,6 +813,10 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         xl: string;
         '2xl': string;
     };
+    shadows: {
+        shadow4: string;
+        shadow5: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     p: (value: PropertyValue<'padding'>) => {
         padding: PropertyValue<"padding">;
@@ -927,6 +946,17 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
     backgroundClip: (value: PropertyValue<'backgroundClip'>) => {
         WebkitBackgroundClip: PropertyValue<"backgroundClip">;
         backgroundClip: PropertyValue<"backgroundClip">;
+    };
+    brd: (value: PropertyValue<'backgroundColor'>) => {
+        boxShadow: string;
+    };
+    brdFocus: (value: PropertyValue<'backgroundColor'>) => {
+        boxShadow: string;
+    };
+    trz: ({ property }: {
+        property: PropertyValue<'transitionProperty'>;
+    }) => {
+        transitionProperty: PropertyValue<"transitionProperty">;
     };
 }>>, lightTheme: string & {
     colors: {
@@ -1238,6 +1268,10 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         lg: import("@stitches/react/types/theme").Token<"lg", string, "space", "">;
         xl: import("@stitches/react/types/theme").Token<"xl", string, "space", "">;
         '2xl': import("@stitches/react/types/theme").Token<"2xl", string, "space", "">;
+    };
+    shadows: {
+        shadow4: import("@stitches/react/types/theme").Token<"shadow4", string, "shadows", "">;
+        shadow5: import("@stitches/react/types/theme").Token<"shadow5", string, "shadows", "">;
     };
 }, getCssText: () => string;
 declare const darkTheme: string & {

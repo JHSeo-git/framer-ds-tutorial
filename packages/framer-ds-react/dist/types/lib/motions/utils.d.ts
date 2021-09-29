@@ -1,3 +1,3 @@
 import { ElementType } from 'react';
-export declare type AsMotionBox = 'div' | 'ul' | 'li' | 'nav' | 'a';
-export declare const motionBoxAsComponent: (as: ElementType | undefined) => import("framer-motion").ForwardRefComponent<HTMLDivElement, import("framer-motion").HTMLMotionProps<"div">> | import("framer-motion").ForwardRefComponent<HTMLLIElement, import("framer-motion").HTMLMotionProps<"li">> | import("framer-motion").ForwardRefComponent<HTMLAnchorElement, import("framer-motion").HTMLMotionProps<"a">>;
+export declare type AsMotionBox = 'div' | 'aside' | 'section' | 'article' | 'main' | 'header' | 'footer' | 'ol' | 'ul' | 'li' | 'nav' | 'span' | 'a';
+export declare const motionBoxAsComponent: (as: ElementType | undefined) => import("framer-motion").ForwardRefComponent<HTMLDivElement, import("framer-motion").HTMLMotionProps<"div">> | import("framer-motion").ForwardRefComponent<HTMLOListElement, import("framer-motion").HTMLMotionProps<"ol">> | import("framer-motion").ForwardRefComponent<HTMLLIElement, import("framer-motion").HTMLMotionProps<"li">> | import("framer-motion").ForwardRefComponent<HTMLAnchorElement, import("framer-motion").HTMLMotionProps<"a">>;

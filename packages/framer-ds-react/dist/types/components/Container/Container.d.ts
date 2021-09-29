@@ -336,6 +336,10 @@ declare const BaseContainer: import("@stitches/react/types/styled-component").St
         xl: string;
         '2xl': string;
     };
+    shadows: {
+        shadow4: string;
+        shadow5: string;
+    };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     p: (value: import("@stitches/react").PropertyValue<"padding">) => {
         padding: import("@stitches/react").PropertyValue<"padding">;
@@ -465,6 +469,17 @@ declare const BaseContainer: import("@stitches/react/types/styled-component").St
     backgroundClip: (value: import("@stitches/react").PropertyValue<"backgroundClip">) => {
         WebkitBackgroundClip: import("@stitches/react").PropertyValue<"backgroundClip">;
         backgroundClip: import("@stitches/react").PropertyValue<"backgroundClip">;
+    };
+    brd: (value: import("@stitches/react").PropertyValue<"backgroundColor">) => {
+        boxShadow: string;
+    };
+    brdFocus: (value: import("@stitches/react").PropertyValue<"backgroundColor">) => {
+        boxShadow: string;
+    };
+    trz: ({ property }: {
+        property: import("@stitches/react").PropertyValue<"transitionProperty">;
+    }) => {
+        transitionProperty: import("@stitches/react").PropertyValue<"transitionProperty">;
     };
 }>>;
 export default Container;
