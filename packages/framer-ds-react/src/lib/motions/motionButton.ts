@@ -19,7 +19,7 @@ export const buttonWhileMotion = (
           scale: 1.1,
         },
         whileTap: {
-          scale: 0.9,
+          scale: 1.05,
         },
       }
       break
