@@ -9,9 +9,10 @@ import Navigation from './Navigation'
 
 export type LayoutProps = {
   children: React.ReactNode
+  pure?: boolean
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, pure = false }: LayoutProps) => {
   const menuRef = useRef(null)
   const router = useRouter()
   const [menuOpen, setMenuOpen] = useMenuOpenState()
@@ -28,6 +29,10 @@ const Layout = ({ children }: LayoutProps) => {
   }
 
   useOnClickOutside(menuRef, handleClickOutside)
+
+  if (pure) {
+    return <Box css={{ bc: '$loContrast' }}>{children}</Box>
+  }
 
   return (
     <Box css={{ bc: '$loContrast' }}>
@@ -54,9 +59,9 @@ const Layout = ({ children }: LayoutProps) => {
             right: 0,
             bottom: 0,
             opacity: menuOpen ? 1 : 0,
-            transitionDuration: '0.1s',
-            transitionProperty: 'all',
             visibility: menuOpen ? 'visible' : 'hidden',
+            transitionDuration: menuOpen ? '0.2s' : '0.4s',
+            transitionProperty: 'all',
             bc: 'rgba(0,0,0,0.6)',
             zIndex: '$6',
             '@lg': {
@@ -69,30 +74,25 @@ const Layout = ({ children }: LayoutProps) => {
         <Box
           ref={menuRef}
           as="nav"
-          animate={menuOpen ? 'open' : 'closed'}
-          variants={{
-            open: {
-              opacity: 1,
-              visibility: 'visible',
-              transform: 'translate3d(0,0,0)',
-              transition: {
-                type: 'spring',
-                stiffness: 20,
-                restDelta: 2,
-              },
-            },
-            closed: {
-              opacity: 0,
-              visibility: 'hidden',
-              transform: 'translate3d(-100%,0,0)',
-              transition: {
-                delay: 0.2,
-                type: 'spring',
-                stiffness: 400,
-                damping: 40,
-              },
-            },
-          }}
+          // animate={menuOpen ? 'open' : 'closed'}
+          // variants={{
+          //   open: {
+          //     opacity: 1,
+          //     visibility: 'visible',
+          //     transform: 'translate3d(0%,0,0)',
+          //     transition: {
+          //       values: ['transform', 'visibility'],
+          //     },
+          //   },
+          //   closed: {
+          //     opacity: 0,
+          //     visibility: 'hidden',
+          //     transform: 'translate3d(-100%,0,0)',
+          //     transition: {
+          //       values: ['transform', 'visibility'],
+          //     },
+          //   },
+          // }}
           css={{
             width: '80vw',
             position: 'fixed',
@@ -103,16 +103,24 @@ const Layout = ({ children }: LayoutProps) => {
             borderBottom: '1px solid $colors$mono5',
             WebkitOverflowScrolling: 'touch',
             display: 'block',
-            // opacity: menuOpen ? 1 : 0,
-            // visibility: menuOpen ? 'visible' : 'hidden',
             py: '$space20',
             ox: 'hidden',
+            opacity: menuOpen ? 1 : 0,
+            visibility: menuOpen ? 'visible' : 'hidden',
+            transform: menuOpen
+              ? 'translate3d(0%,0,0)'
+              : 'translate3d(-100%,0,0)',
+            transitionDuration: '0.2s',
+            transitionTimingFunction: 'ease-in-out',
+            transitionProperty: 'transform visibility',
+            bs: '',
             zIndex: '$6',
             '@lg': {
               width: '16rem',
               top: '$space65',
               opacity: 1,
               visibility: 'visible',
+              transform: 'translate3d(0%,0,0)',
               borderBottom: '0',
               borderRight: '1px solid $colors$mono5',
               zIndex: '$1',
