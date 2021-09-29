@@ -1,6 +1,6 @@
 import { Box, Text } from '@framerds/react'
 import { useRouter } from 'next/dist/client/router'
-import { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import useOnClickOutside from '../hook/useOnClickOutside'
 import { colorsRoutes } from '../lib/config/colorsRoutes'
 import { useMenuOpenState } from '../store/app'
@@ -17,18 +17,23 @@ const Layout = ({ children, pure = false }: LayoutProps) => {
   const router = useRouter()
   const [menuOpen, setMenuOpen] = useMenuOpenState()
 
-  const routerSlug = router.query.slug
-
-  let currentPageSlug: string | undefined
-  if (typeof routerSlug === 'string') {
-    currentPageSlug = routerSlug
-  }
+  const currentPageSlug = router.asPath
 
   const handleClickOutside = () => {
     setMenuOpen(false)
   }
 
   useOnClickOutside(menuRef, handleClickOutside)
+  useEffect(() => {
+    // when router change in same <Layout>,
+    // close a menu sidebar
+    const handleRouteChange = () => setMenuOpen(false)
+    router.events.on('routeChangeStart', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange)
+    }
+  }, [router, setMenuOpen])
 
   if (pure) {
     return <Box css={{ bc: '$loContrast' }}>{children}</Box>
@@ -137,7 +142,7 @@ const Layout = ({ children, pure = false }: LayoutProps) => {
                     key={page.slug}
                     href={`/${page.slug}`}
                     disabled={isDraft}
-                    active={currentPageSlug === page.slug}
+                    active={currentPageSlug === `/${page.slug}`}
                   >
                     <Text>{page.title}</Text>
                   </Navigation.NavItem>
