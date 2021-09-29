@@ -2,8 +2,8 @@ import React from 'react'
 import type { NextPage } from 'next'
 import Layout from '@components/Layout'
 
-const ColorsSubPage: NextPage = () => {
-  return <Layout>ColorsPage</Layout>
+const DocsSubPage: NextPage = () => {
+  return <Layout>docs sub page</Layout>
 }
 
-export default ColorsSubPage
+export default DocsSubPage
