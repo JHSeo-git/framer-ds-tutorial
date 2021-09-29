@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+// const readingTime = require('reading-time')
+// const withPlugins = require('next-compose-plugins')
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)$/,
+})
+
+module.exports = withMDX({
   reactStrictMode: true,
-}
+})
