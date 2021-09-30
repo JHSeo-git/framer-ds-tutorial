@@ -327,6 +327,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         '2xl': string;
     };
     shadows: {
+        muiShadow1: string;
+        muiShadow2: string;
+        muiShadow3: string;
+        muiShadow4: string;
+        muiShadow5: string;
         shadow4: string;
         shadow5: string;
     };
@@ -814,6 +819,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         '2xl': string;
     };
     shadows: {
+        muiShadow1: string;
+        muiShadow2: string;
+        muiShadow3: string;
+        muiShadow4: string;
+        muiShadow5: string;
         shadow4: string;
         shadow5: string;
     };
@@ -1270,6 +1280,11 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
         '2xl': import("@stitches/react/types/theme").Token<"2xl", string, "space", "">;
     };
     shadows: {
+        muiShadow1: import("@stitches/react/types/theme").Token<"muiShadow1", string, "shadows", "">;
+        muiShadow2: import("@stitches/react/types/theme").Token<"muiShadow2", string, "shadows", "">;
+        muiShadow3: import("@stitches/react/types/theme").Token<"muiShadow3", string, "shadows", "">;
+        muiShadow4: import("@stitches/react/types/theme").Token<"muiShadow4", string, "shadows", "">;
+        muiShadow5: import("@stitches/react/types/theme").Token<"muiShadow5", string, "shadows", "">;
         shadow4: import("@stitches/react/types/theme").Token<"shadow4", string, "shadows", "">;
         shadow5: import("@stitches/react/types/theme").Token<"shadow5", string, "shadows", "">;
     };

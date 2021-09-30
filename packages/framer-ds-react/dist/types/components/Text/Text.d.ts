@@ -5,7 +5,7 @@ export declare type TextProps = {
 } & React.ComponentProps<typeof BaseText>;
 declare const Text: ({ children, as, ...rest }: TextProps) => JSX.Element;
 declare const BaseText: import("@stitches/react/types/styled-component").StyledComponent<"span", {
-    size?: "4xl" | "2xl" | "xl" | "sm" | "xs" | "lg" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "3xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
+    size?: "4xl" | "2xl" | "xl" | "base" | "sm" | "xs" | "lg" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "3xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
     color?: "grayScale" | "primary" | "secondary" | "teritary" | "success" | "warning" | "error" | undefined;
     gradient?: boolean | "true" | undefined;
 }, {
@@ -340,6 +340,11 @@ declare const BaseText: import("@stitches/react/types/styled-component").StyledC
         '2xl': string;
     };
     shadows: {
+        muiShadow1: string;
+        muiShadow2: string;
+        muiShadow3: string;
+        muiShadow4: string;
+        muiShadow5: string;
         shadow4: string;
         shadow5: string;
     };
