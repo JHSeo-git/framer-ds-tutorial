@@ -26,7 +26,7 @@ const BaseText = styled('span', {
   lh: '$tight',
 
   defaultVariants: {
-    size: '$base',
+    size: 'base',
     color: 'grayScale',
   },
   variants: {
@@ -62,6 +62,9 @@ const BaseText = styled('span', {
       },
       sm: {
         fontSize: '$sm',
+      },
+      base: {
+        fontSize: '$base',
       },
       lg: {
         fontSize: '$lg',
