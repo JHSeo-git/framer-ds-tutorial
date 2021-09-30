@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <RecoilRoot>
         {process.env.NODE_ENV !== 'production' && <DebugObserver />}
-
         <Component {...pageProps} />
       </RecoilRoot>
     </ThemeProvider>
