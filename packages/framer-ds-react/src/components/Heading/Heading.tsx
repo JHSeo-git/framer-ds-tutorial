@@ -14,13 +14,21 @@ const Heading = React.forwardRef<
   HeadingProps
 >((props, forwardedRef) => {
   const { size = 'h1', as, css, ...rest } = props
+  const textSize: Record<HeadingSizeVariants, TextProps['size']> = {
+    h1: { '@initial': 'h1', '@lg': '6xl' },
+    h2: { '@initial': 'h2', '@lg': '4xl' },
+    h3: { '@initial': 'h3', '@lg': '2xl' },
+    h4: { '@initial': 'h4', '@lg': 'lg' },
+    h5: { '@initial': 'h5' },
+    h6: { '@initial': 'h6' },
+  }
   const defaultAs = as ?? size
   return (
     <Text
       as={defaultAs}
       {...rest}
       ref={forwardedRef}
-      size={size}
+      size={textSize[size]}
       css={{
         fontVariantNumeric: 'proportional-nums',
         ...css,
