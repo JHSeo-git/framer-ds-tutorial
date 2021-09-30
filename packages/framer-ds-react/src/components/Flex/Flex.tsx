@@ -1,6 +1,6 @@
-import { styled } from '@src/lib/stitches'
-import { motion } from 'framer-motion'
 import React from 'react'
+import { styled } from '@src/lib/stitches'
+import { Box } from '../Box'
 
 export type FlexProps = {
   children: React.ReactNode
@@ -10,7 +10,7 @@ const Flex = ({ children, ...rest }: FlexProps) => {
   return <BaseFlex {...rest}>{children}</BaseFlex>
 }
 
-const BaseFlex = styled(motion.div, {
+const BaseFlex = styled(Box, {
   // reset
   boxSizing: 'border-box',
 

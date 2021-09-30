@@ -1,5 +1,5 @@
+import { Box } from '../Box'
 import { styled } from '@src/lib/stitches'
-import { motion } from 'framer-motion'
 import React from 'react'
 
 export type CardProps = {
@@ -10,7 +10,7 @@ const Card = ({ children, ...rest }: CardProps) => {
   return <BaseCard {...rest}>{children}</BaseCard>
 }
 
-const BaseCard = styled(motion.div, {
+const BaseCard = styled(Box, {
   // reset
   appearance: 'none',
   border: 'none',
