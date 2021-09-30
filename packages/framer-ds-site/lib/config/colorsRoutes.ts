@@ -1,4 +1,6 @@
-export const colorsRoutes = [
+import { AllRoutesConfig, RoutesConfig } from './types'
+
+export const colorsRoutes: RoutesConfig = [
   {
     label: 'Color Palette',
     pages: [
@@ -11,13 +13,10 @@ export const colorsRoutes = [
   },
 ]
 
-type AllRoutes = {
-  title: string
-  slug: string
-  draft: boolean
-}[]
-
-export const allColorsRoutes = colorsRoutes.reduce<AllRoutes>((acc, curr) => {
-  acc = [...acc, ...curr.pages.filter((p) => p.draft !== true)]
-  return acc
-}, [])
+export const allColorsRoutes = colorsRoutes.reduce<AllRoutesConfig>(
+  (acc, curr) => {
+    acc = [...acc, ...curr.pages.filter((p) => p.draft !== true)]
+    return acc
+  },
+  [],
+)
