@@ -17,21 +17,25 @@ const menus = [
     href: '/design-system',
     title: 'Design System',
     description: 'All components of design system.',
+    draft: false,
   },
   {
     href: '/colors',
     title: 'Color System',
     description: 'A color system of design system.',
+    draft: false,
   },
   {
     href: '/docs',
     title: 'Documentation',
     description: 'A complete documentaion of design system.',
+    draft: false,
   },
   {
     href: '/',
     title: 'Empty',
     description: 'Coming soon.',
+    draft: true,
   },
 ]
 
@@ -56,7 +60,7 @@ const Home: NextPage = () => {
               },
             }}
           >
-            FDX for React
+            FDS for React
           </Heading>
           <Text
             as="p"
@@ -88,10 +92,21 @@ const Home: NextPage = () => {
               <NextLink key={menu.href} href={menu.href} passHref>
                 <Card as="a" variant="ghost">
                   <Box css={{ p: '$space20' }}>
-                    <Heading size="h3" css={{ mb: '$space10' }}>
+                    <Heading
+                      size="h3"
+                      css={{
+                        mb: '$space10',
+                        color: menu.draft ? '$mono9' : undefined,
+                      }}
+                    >
                       {menu.title}
                     </Heading>
-                    <Text as="p" css={{ color: '$mono11' }}>
+                    <Text
+                      as="p"
+                      css={{
+                        color: menu.draft ? '$mono9' : '$mono11',
+                      }}
+                    >
                       {menu.description}
                     </Text>
                   </Box>
