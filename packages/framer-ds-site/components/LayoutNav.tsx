@@ -3,7 +3,7 @@ import { Box, Button, Container, Flex, Text } from '@framerds/react'
 import useOnClickOutside from '@hook/useOnClickOutside'
 import { RoutesConfig } from '@lib/config/types'
 import IconMenu from './icons/IconMenu'
-import Navigation from './Navigation'
+import { NavHeading, NavItem } from './Navigation'
 import { useRouter } from 'next/router'
 
 export type LayoutNavProps = {
@@ -116,28 +116,23 @@ const LayoutNav = ({ routes }: LayoutNavProps) => {
           left: 0,
           bottom: 0,
           backgroundColor: '$loContrast',
-          borderBottom: '1px solid $colors$mono5',
           WebkitOverflowScrolling: 'touch',
           display: 'block',
           py: '$space20',
           ox: 'hidden',
           opacity: menuOpen ? 1 : 0,
           visibility: menuOpen ? 'visible' : 'hidden',
-          transform: menuOpen
-            ? 'translate3d(0%,0,0)'
-            : 'translate3d(-100%,0,0)',
+          transform: menuOpen ? 'translate3d(0,0,0)' : 'translate3d(-100%,0,0)',
           transitionDuration: '0.2s',
           transitionTimingFunction: 'ease-in-out',
           transitionProperty: 'transform visibility',
-          bs: '',
           zIndex: '$6',
           '@lg': {
             width: '16rem',
             top: '$space65',
             opacity: 1,
             visibility: 'visible',
-            transform: 'translate3d(0%,0,0)',
-            borderBottom: '0',
+            transform: 'translate3d(0,0,0)',
             borderRight: '1px solid $colors$mono5',
             zIndex: '$1',
           },
@@ -145,18 +140,18 @@ const LayoutNav = ({ routes }: LayoutNavProps) => {
       >
         {routes.map((section) => (
           <Box key={section.label} css={{ mb: '$space20' }}>
-            <Navigation.NavHeading>{section.label}</Navigation.NavHeading>
+            <NavHeading>{section.label}</NavHeading>
             {section.pages.map((page) => {
               const isDraft = page.draft
               return (
-                <Navigation.NavItem
+                <NavItem
                   key={page.slug}
                   href={`/${page.slug}`}
                   disabled={isDraft}
                   active={currentPageSlug === `/${page.slug}`}
                 >
                   <Text>{page.title}</Text>
-                </Navigation.NavItem>
+                </NavItem>
               )
             })}
           </Box>

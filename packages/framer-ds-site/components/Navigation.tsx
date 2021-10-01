@@ -65,4 +65,5 @@ const Navigation = {
   NavItem,
 }
 
+export { NavHeading, NavItem }
 export default Navigation
