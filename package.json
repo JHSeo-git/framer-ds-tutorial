@@ -12,6 +12,7 @@
   },
   "workspaces": [
     "packages/framer-ds-react",
+    "packages/framer-ds-mdx",
     "packages/framer-ds-site"
   ]
 }
