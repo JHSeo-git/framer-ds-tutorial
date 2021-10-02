@@ -4,11 +4,17 @@ import React from 'react'
 
 export type CardProps = {
   children: React.ReactNode
-} & React.ComponentProps<typeof BaseCard>
+} & React.ComponentPropsWithoutRef<typeof BaseCard>
 
-const Card = ({ children, ...rest }: CardProps) => {
-  return <BaseCard {...rest}>{children}</BaseCard>
-}
+const Card = React.forwardRef<React.ElementRef<typeof BaseCard>, CardProps>(
+  ({ children, ...rest }, forwardedRef) => {
+    return (
+      <BaseCard ref={forwardedRef} {...rest}>
+        {children}
+      </BaseCard>
+    )
+  },
+)
 
 const BaseCard = styled(Box, {
   // reset
