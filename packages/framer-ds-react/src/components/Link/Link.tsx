@@ -1,6 +1,5 @@
 import React from 'react'
 import { styled } from '@src/lib/stitches'
-import { Text } from '../Text'
 
 export type LinkProps = {
   children: React.ReactNode
@@ -39,10 +38,6 @@ const BaseLink = styled('a', {
     textDecorationLine: 'none',
   },
 
-  [`& ${Text}`]: {
-    color: 'inherit',
-  },
-
   defaultVariants: {
     variant: 'contrast',
   },
@@ -69,43 +64,18 @@ const BaseLink = styled('a', {
           outlineColor: '$mono8',
         },
       },
-      primary: {
-        color: '$primary11',
+      blueLink: {
+        color: '$secondary10',
+        textDecorationColor: '$secondary8',
         textDecoration: 'underline',
-        textDecorationColor: '$primary5',
         '@hover': {
           '&:hover': {
-            textDecorationColor: '$primary7',
-          },
-        },
-        '&:focus': {
-          outlineColor: '$primary8',
-        },
-      },
-      secondary: {
-        color: '$secondary11',
-        textDecoration: 'underline',
-        textDecorationColor: '$secondary5',
-        '@hover': {
-          '&:hover': {
-            textDecorationColor: '$secondary7',
+            color: '$secondary11',
+            textDecorationColor: '$secondary10',
           },
         },
         '&:focus': {
           outlineColor: '$secondary8',
-        },
-      },
-      teritary: {
-        color: '$teritary11',
-        textDecoration: 'underline',
-        textDecorationColor: '$teritary5',
-        '@hover': {
-          '&:hover': {
-            textDecorationColor: '$teritary7',
-          },
-        },
-        '&:focus': {
-          outlineColor: '$teritary8',
         },
       },
     },

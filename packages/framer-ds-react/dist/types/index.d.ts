@@ -9,4 +9,5 @@ export { Heading } from './components/Heading';
 export { Image } from './components/Image';
 export { Link } from './components/Link';
 export { Section } from './components/Section';
+export { Separator } from './components/Separator';
 export { Text } from './components/Text';

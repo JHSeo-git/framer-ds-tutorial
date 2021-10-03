@@ -8,7 +8,7 @@ declare const Link: React.ForwardRefExoticComponent<{
     ref?: ((instance: HTMLAnchorElement | null) => void) | React.RefObject<HTMLAnchorElement> | null | undefined;
 }, "css" | "shape" | "variant"> & import("@stitches/react/types/styled-component").TransformProps<{
     shape?: "round" | "pill" | undefined;
-    variant?: "primary" | "secondary" | "teritary" | "contrast" | undefined;
+    variant?: "contrast" | "blueLink" | undefined;
 }, {
     sm: string;
     md: string;
@@ -495,7 +495,7 @@ declare const Link: React.ForwardRefExoticComponent<{
 }, keyof React.AnchorHTMLAttributes<HTMLAnchorElement> | "key" | "css" | "shape" | "variant"> & React.RefAttributes<HTMLAnchorElement>>;
 declare const BaseLink: import("@stitches/react/types/styled-component").StyledComponent<"a", {
     shape?: "round" | "pill" | undefined;
-    variant?: "primary" | "secondary" | "teritary" | "contrast" | undefined;
+    variant?: "contrast" | "blueLink" | undefined;
 }, {
     sm: string;
     md: string;
