@@ -2,11 +2,12 @@ import React, { useMemo } from 'react'
 import type { GetStaticPaths, NextPage } from 'next'
 import { getMDXComponent } from 'mdx-bundler/client'
 import Layout from '@components/Layout'
-import { Heading } from '@framerds/react'
+import { Container, Heading, Section } from '@framerds/react'
 import MDXProvider from '@components/mdx/MDXProvider'
 import { getAllFrontmatter, getMdxBySlug } from '@lib/mdx/mdx'
 import { Frontmatter } from '@lib/types/mdx'
 import { colorsRoutes } from '@lib/config/colorsRoutes'
+import mdxComponents from '@components/mdx/mdxComponents'
 
 type ColorsSubPageProps = {
   frontmatter: Frontmatter
@@ -17,10 +18,16 @@ const ColorsSubPage: NextPage<ColorsSubPageProps> = ({ frontmatter, code }) => {
   const Component = useMemo(() => getMDXComponent(code), [code])
   return (
     <Layout routes={colorsRoutes}>
-      <Heading>{frontmatter.metaTitle}</Heading>
-      <MDXProvider frontmatter={frontmatter}>
-        <Component />
-      </MDXProvider>
+      <Section>
+        <Container>
+          <Heading size="h1" css={{ mb: '$space20' }}>
+            {frontmatter.metaTitle}
+          </Heading>
+          <MDXProvider frontmatter={frontmatter}>
+            <Component components={mdxComponents} />
+          </MDXProvider>
+        </Container>
+      </Section>
     </Layout>
   )
 }
