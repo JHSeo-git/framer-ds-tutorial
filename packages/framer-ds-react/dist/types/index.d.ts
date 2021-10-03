@@ -7,5 +7,6 @@ export { Flex } from './components/Flex';
 export { Grid } from './components/Grid';
 export { Heading } from './components/Heading';
 export { Image } from './components/Image';
+export { Link } from './components/Link';
 export { Section } from './components/Section';
 export { Text } from './components/Text';
