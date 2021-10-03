@@ -16,7 +16,7 @@ const Layout = ({ children, routes, pure = false }: LayoutProps) => {
   }
 
   return (
-    <Box css={{ height: '100%', bc: '$loContrast' }}>
+    <Box css={{ minHeight: '100%', bc: '$loContrast' }}>
       <Box
         css={{
           position: 'fixed',
