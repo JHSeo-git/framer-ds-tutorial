@@ -31,10 +31,10 @@ export const getAllFrontmatter = async (targetPath?: string) => {
   )
 }
 
-export const getMdxBySlug = async (basePath: string, slug: string) => {
-  const mdxPath = path.join(DATA_PATH, basePath, `${slug}.mdx`)
+export const getMdxBySlug = async (targetPath: string, slug: string) => {
+  const rootPath = path.join(DATA_PATH, targetPath, `${slug}.mdx`)
 
-  const { frontmatter, code } = await bundleMDXFile(mdxPath, {})
+  const { frontmatter, code } = await bundleMDXFile(rootPath, {})
 
   return {
     frontmatter: {
