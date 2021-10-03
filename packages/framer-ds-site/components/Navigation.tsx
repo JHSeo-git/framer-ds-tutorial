@@ -50,8 +50,14 @@ const NavItem = ({
           px: '$space20',
           py: '$space10',
           color: disabled ? '$mono10' : '$hiContrast',
-          backgroundColor: active ? '$primary5' : '$transparent',
+          bc: active ? '$secondary3' : '$transparent',
+          brd: active ? '$mono3' : '$transparent',
           minHeight: '$size45',
+          '@hover': {
+            '&:hover': {
+              bc: !active && '$secondary2',
+            },
+          },
         }}
       >
         {children}
