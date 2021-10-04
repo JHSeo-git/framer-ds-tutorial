@@ -1,8 +1,7 @@
-import { ComponentMap } from 'mdx-bundler/client'
 import mdxPrimitiveComponents from './mdxPrimitiveComponents'
 import mdxCustomComponents from './mdxCustomComponents'
 
-const mdxComponents: ComponentMap = {
+const mdxComponents = {
   /**
    * this is primitives components
    * with design system.

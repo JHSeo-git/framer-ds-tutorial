@@ -1,6 +1,9 @@
 import NextLink from 'next/link'
+import Image from 'next/image'
 import * as FDS from '@framerds/react'
 import { ComponentMap } from 'mdx-bundler/client'
+import React from 'react'
+import CodeBlock from '@components/CodeBlock'
 
 const mdxPrimitiveComponents: ComponentMap = {
   // HEADING
@@ -50,7 +53,11 @@ const mdxPrimitiveComponents: ComponentMap = {
   // TEXT
   p: ({ children, ...props }) => {
     return (
-      <FDS.Text {...props} as="p" css={{ mb: '$space15' }}>
+      <FDS.Text
+        {...props}
+        as="p"
+        css={{ position: 'relative', mb: '$space15' }}
+      >
         {children}
       </FDS.Text>
     )
@@ -71,21 +78,14 @@ const mdxPrimitiveComponents: ComponentMap = {
   },
   span: ({ children, ...props }) => {
     return (
-      <FDS.Text {...props} as="span">
+      <FDS.Text {...props} as="span" css={{ display: 'inline' }}>
         {children}
       </FDS.Text>
     )
   },
 
   // Anchor
-  a: ({
-    href = '',
-    children,
-    ...props
-  }: Omit<React.ComponentProps<typeof FDS.Link>, 'children' | 'href'> & {
-    children?: React.ReactNode
-    href?: string
-  }) => {
+  a: ({ href = '', children, ...props }: React.ComponentPropsWithRef<'a'>) => {
     if (href.startsWith('http')) {
       return (
         <FDS.Link
@@ -121,19 +121,146 @@ const mdxPrimitiveComponents: ComponentMap = {
       <FDS.Separator
         direction="horizontal"
         size="max"
+        css={{ my: '$space45' }}
         {...props}
-        css={{ my: '$space45', mx: '$space20' }}
-      ></FDS.Separator>
+      />
     )
   },
+
   // ul
+  ul: ({ children, ...props }) => {
+    return (
+      <FDS.Box
+        as="ul"
+        css={{
+          mt: '$space10',
+          mb: '$space20',
+          color: '$hiContrast',
+        }}
+        {...props}
+      >
+        {children}
+      </FDS.Box>
+    )
+  },
   // ol
+  ol: ({ children, ...props }) => {
+    return (
+      <FDS.Box
+        as="ol"
+        css={{
+          mb: '$space20',
+          color: '$hiContrast',
+        }}
+        {...props}
+      >
+        {children}
+      </FDS.Box>
+    )
+  },
   // li
+  li: ({ children, ...props }) => {
+    return (
+      <FDS.Box as="li" css={{ my: '$space5' }}>
+        <FDS.Text as="div" {...props}>
+          {children}
+        </FDS.Text>
+      </FDS.Box>
+    )
+  },
+
   // img
+  img: ({
+    src = '',
+    alt = '',
+    placeholder,
+    ...props
+  }: React.ComponentPropsWithRef<'img'>) => {
+    if (src.startsWith('http')) {
+      return (
+        <FDS.Flex
+          justify="center"
+          css={{
+            my: '$space35',
+            mx: 'auto',
+          }}
+        >
+          <FDS.Image
+            src={src}
+            alt={alt}
+            placeholder={placeholder}
+            css={{
+              maxWidth: '100%',
+              verticalAlign: 'middle',
+            }}
+            {...props}
+          />
+        </FDS.Flex>
+      )
+    }
+    return (
+      <FDS.Flex
+        justify="center"
+        css={{
+          position: 'relative',
+          my: '$space35',
+          mx: 'auto',
+        }}
+      >
+        <Image
+          src={src}
+          alt={alt}
+          width="100%"
+          height="100%"
+          objectFit="contain"
+          placeholder="empty"
+          {...props}
+        />
+      </FDS.Flex>
+    )
+  },
+
   // blockquote
+  blockquote: ({ children, ...props }) => {
+    return (
+      <FDS.Box
+        as="section"
+        css={{
+          my: '$space35',
+          pl: '$space25',
+          borderLeft: '0.25rem solid $secondary8',
+          bc: '$secondary2',
+          color: '$mono12',
+          '& *': {
+            my: 0,
+          },
+          '& p': {
+            py: '$space15',
+            color: '$mono12',
+          },
+        }}
+        {...props}
+      >
+        {children}
+      </FDS.Box>
+    )
+  },
+
   // pre
+  pre: ({ children }) => <>{children}</>,
+
   // code
-  // Kbd
+  code: ({ children, ...props }) => {
+    console.log({ props })
+    if (!Object.keys(props).includes('className')) {
+      return (
+        <FDS.Code {...props} css={{ whiteSpace: 'break-spaces' }}>
+          {children}
+        </FDS.Code>
+      )
+    }
+    return <CodeBlock {...(props as any)}>{children}</CodeBlock>
+  },
   //
 }
 
