@@ -3,6 +3,7 @@ import typoPalette from '@src/tokens/typoPalette'
 // TODO: 더 좋은 형태로 바꾸어 보자
 const typography = {
   textFontFamily: typoPalette.fontFamily.OpenSans,
+  monoFontFamily: typoPalette.fontFamily.RobotoMono,
   digitFontFamily: typoPalette.fontFamily.withSpocaHanSansNeo(
     typoPalette.fontFamily.OpenSans,
   ),

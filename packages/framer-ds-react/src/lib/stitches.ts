@@ -39,6 +39,7 @@ const {
     },
     fonts: {
       text: themes.lightTheme.typography.textFontFamily,
+      mono: themes.lightTheme.typography.monoFontFamily,
       digit: themes.lightTheme.typography.digitFontFamily,
     },
     fontWeights: themes.lightTheme.typography.fontWeights,

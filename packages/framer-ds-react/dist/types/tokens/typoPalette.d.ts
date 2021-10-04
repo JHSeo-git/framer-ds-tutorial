@@ -1,6 +1,7 @@
 declare const typoPalette: {
     fontFamily: {
         Roboto: string;
+        RobotoMono: string;
         OpenSans: string;
         SpocaHanSansNeo: string;
         withSpocaHanSansNeo: (fontFamily: string) => string;

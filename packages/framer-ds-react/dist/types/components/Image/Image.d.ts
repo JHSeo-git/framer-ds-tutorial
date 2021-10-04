@@ -214,6 +214,7 @@ declare const Image: import("@stitches/react/types/styled-component").StyledComp
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

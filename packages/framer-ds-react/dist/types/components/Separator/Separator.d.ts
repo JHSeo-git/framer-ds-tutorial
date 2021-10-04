@@ -228,6 +228,7 @@ declare const Separator: React.ForwardRefExoticComponent<{
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -967,6 +968,7 @@ declare const Separator: React.ForwardRefExoticComponent<{
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -1455,6 +1457,7 @@ declare const BaseSeparator: import("@stitches/react/types/styled-component").St
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -2193,6 +2196,7 @@ declare const BaseSeparator: import("@stitches/react/types/styled-component").St
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

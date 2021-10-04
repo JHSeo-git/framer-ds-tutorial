@@ -1,6 +1,7 @@
 const typoPalette = {
   fontFamily: {
     Roboto: '"Roboto", sans-serif',
+    RobotoMono: '"Roboto Mono", monospace',
     OpenSans: '"Open Sans", sans-serif',
     SpocaHanSansNeo: '"Spoqa Han Sans Neo", sans-serif',
     withSpocaHanSansNeo: (fontFamily: string) =>

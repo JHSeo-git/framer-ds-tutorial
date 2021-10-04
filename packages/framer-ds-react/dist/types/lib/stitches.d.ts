@@ -211,6 +211,7 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {
@@ -703,6 +704,7 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {
@@ -1164,6 +1166,7 @@ declare const styled: <Type extends import("@stitches/react/types/util").Functio
     };
     fonts: {
         text: import("@stitches/react/types/theme").Token<"text", string, "fonts", "">;
+        mono: import("@stitches/react/types/theme").Token<"mono", string, "fonts", "">;
         digit: import("@stitches/react/types/theme").Token<"digit", string, "fonts", "">;
     };
     fontWeights: {

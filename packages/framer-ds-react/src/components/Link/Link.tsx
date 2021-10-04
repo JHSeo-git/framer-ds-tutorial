@@ -53,28 +53,30 @@ const BaseLink = styled('a', {
     variant: {
       contrast: {
         color: '$hiContrast',
-        textDecoration: 'underline',
-        textDecorationColor: '$mono5',
         '@hover': {
           '&:hover': {
+            textDecoration: 'underline',
             textDecorationColor: '$mono7',
           },
         },
         '&:focus': {
+          textDecoration: 'underline',
+          textDecorationColor: '$mono7',
           outlineColor: '$mono8',
         },
       },
       blueLink: {
         color: '$secondary10',
-        textDecorationColor: '$secondary8',
-        textDecoration: 'underline',
         '@hover': {
           '&:hover': {
             color: '$secondary11',
+            textDecoration: 'underline',
             textDecorationColor: '$secondary10',
           },
         },
         '&:focus': {
+          textDecoration: 'underline',
+          textDecorationColor: '$secondary10',
           outlineColor: '$secondary8',
         },
       },

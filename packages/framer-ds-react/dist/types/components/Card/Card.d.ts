@@ -225,6 +225,7 @@ declare const Card: React.ForwardRefExoticComponent<{
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -964,6 +965,7 @@ declare const Card: React.ForwardRefExoticComponent<{
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -1452,6 +1454,7 @@ declare const BaseCard: import("@stitches/react/types/styled-component").StyledC
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -2190,6 +2193,7 @@ declare const BaseCard: import("@stitches/react/types/styled-component").StyledC
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

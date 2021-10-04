@@ -224,6 +224,7 @@ declare const BaseGrid: import("@stitches/react/types/styled-component").StyledC
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -968,6 +969,7 @@ declare const BaseGrid: import("@stitches/react/types/styled-component").StyledC
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

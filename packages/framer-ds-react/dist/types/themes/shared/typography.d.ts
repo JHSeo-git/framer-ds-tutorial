@@ -1,5 +1,6 @@
 declare const typography: {
     textFontFamily: string;
+    monoFontFamily: string;
     digitFontFamily: string;
     fontWeights: {
         thin: number;

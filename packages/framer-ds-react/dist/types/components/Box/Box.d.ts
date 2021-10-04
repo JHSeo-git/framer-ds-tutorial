@@ -220,6 +220,7 @@ declare const Box: React.ForwardRefExoticComponent<{
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {

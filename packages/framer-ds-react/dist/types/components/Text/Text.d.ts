@@ -224,6 +224,7 @@ declare const BaseText: import("@stitches/react/types/styled-component").StyledC
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

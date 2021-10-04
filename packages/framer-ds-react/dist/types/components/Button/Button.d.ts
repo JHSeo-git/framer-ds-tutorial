@@ -228,6 +228,7 @@ declare const BaseButton: import("@stitches/react/types/styled-component").Style
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

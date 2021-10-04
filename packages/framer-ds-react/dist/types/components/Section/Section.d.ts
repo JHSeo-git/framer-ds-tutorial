@@ -221,6 +221,7 @@ declare const BaseSection: import("@stitches/react/types/styled-component").Styl
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

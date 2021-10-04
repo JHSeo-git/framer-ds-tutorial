@@ -226,6 +226,7 @@ declare const Link: React.ForwardRefExoticComponent<{
         };
         fonts: {
             text: string;
+            mono: string;
             digit: string;
         };
         fontWeights: {
@@ -712,6 +713,7 @@ declare const BaseLink: import("@stitches/react/types/styled-component").StyledC
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {

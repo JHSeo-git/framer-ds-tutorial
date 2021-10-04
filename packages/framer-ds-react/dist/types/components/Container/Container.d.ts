@@ -221,6 +221,7 @@ declare const BaseContainer: import("@stitches/react/types/styled-component").St
     };
     fonts: {
         text: string;
+        mono: string;
         digit: string;
     };
     fontWeights: {
