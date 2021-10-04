@@ -44,6 +44,8 @@ const LayoutNav = ({ routes }: LayoutNavProps) => {
           left: 0,
           right: 0,
           boxShadow: '0 0 0 1px $colors$mono5',
+          bc: '$loContrast',
+          zIndex: '$5',
           '@lg': {
             // TODO: change alternative css for transition
             display: 'none',

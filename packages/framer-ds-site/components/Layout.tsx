@@ -25,7 +25,7 @@ const Layout = ({ children, routes, pure = false }: LayoutProps) => {
           width: '100%',
           boxShadow: '0 0 0 1px $colors$mono5',
           zIndex: '$5',
-          backgroundColor: 'inherit',
+          bc: '$loContrast',
         }}
       >
         <Header height="$size65" />
