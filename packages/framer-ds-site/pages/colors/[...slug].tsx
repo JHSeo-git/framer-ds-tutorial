@@ -24,7 +24,7 @@ const ColorsSubPage: NextPage<ColorsSubPageProps> = ({ frontmatter, code }) => {
             {frontmatter.metaTitle}
           </Heading>
           <MDXProvider frontmatter={frontmatter}>
-            <Component components={mdxComponents} />
+            <Component components={mdxComponents as any} />
           </MDXProvider>
         </Container>
       </Section>
