@@ -60,8 +60,7 @@ const BaseLink = styled('a', {
           },
         },
         '&:focus': {
-          textDecoration: 'underline',
-          textDecorationColor: '$mono7',
+          textDecoration: 'none',
           outlineColor: '$mono8',
         },
       },
@@ -75,8 +74,7 @@ const BaseLink = styled('a', {
           },
         },
         '&:focus': {
-          textDecoration: 'underline',
-          textDecorationColor: '$secondary10',
+          textDecoration: 'none',
           outlineColor: '$secondary8',
         },
       },

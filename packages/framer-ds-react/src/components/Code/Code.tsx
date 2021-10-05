@@ -35,6 +35,11 @@ const BaseCode = styled('code', {
         bc: '$primary3',
         color: '$primary11',
       },
+      inherit: {
+        bc: 'inherit',
+        fontSize: 'inherit',
+        whiteSpace: 'inherit',
+      },
     },
   },
 })
