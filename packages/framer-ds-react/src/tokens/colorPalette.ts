@@ -6,6 +6,10 @@ import {
   amberA,
   amberDark,
   amberDarkA,
+  blue,
+  blueA,
+  blueDark,
+  blueDarkA,
   crimson,
   crimsonA,
   crimsonDark,
@@ -42,6 +46,10 @@ import {
   slateA,
   slateDark,
   slateDarkA,
+  yellow,
+  yellowA,
+  yellowDark,
+  yellowDarkA,
 } from '@radix-ui/colors'
 
 const colorPalette = {
@@ -99,6 +107,16 @@ const colorPalette = {
   crimsonDark,
   crimsonA,
   crimsonDarkA,
+
+  blue,
+  blueDark,
+  blueA,
+  blueDarkA,
+
+  yellow,
+  yellowDark,
+  yellowA,
+  yellowDarkA,
 }
 
 export type ColorPalette = typeof colorPalette
