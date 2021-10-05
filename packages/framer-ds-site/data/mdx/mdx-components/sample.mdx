@@ -1,0 +1,142 @@
+---
+metaTitle: MDX Sample
+name: mdx sample
+---
+
+**frontmatter.metaTitle**: {frontmatter.metaTitle}
+
+**frontmatter.name**: {frontmatter.name}
+
+## heading
+
+# Heading1
+
+## Heading2
+
+### Heading3
+
+#### Heading4
+
+Paragraph is paragraph
+
+Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document.
+There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.
+
+## link
+
+### internal route
+
+[Inner Link(home)](/)
+
+### external link
+
+[Outer Link(blog)](https://seonest.net)
+
+## text
+
+### strong
+
+글자 사이에 **strong text**가 들어가 있는 경우
+
+### italic
+
+_기울게 글자를 작성하면 이렇게 됩니다_
+
+### removed
+
+~~글자를 삭제한다면 이렇게 됩나다~~
+
+## hr
+
+---
+
+---
+
+---
+
+## ul
+
+- list 1
+- list 2
+- list 3
+  - list 3 - 1
+
+## ol
+
+1. list 1
+2. list 2
+3. list 3
+
+## image
+
+### internal image
+
+<Box>![vercel.svg](/vercel.svg)</Box>
+
+### external image
+
+<Box>![external.png](https://images.unsplash.com/photo-1632679326346-19b4031f7c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMzMzMjE0Mw&ixlib=rb-1.2.1&q=80&w=1080)</Box>
+
+## blockquote
+> blockquote
+> next line?
+
+> blockquote
+>> first of type blockquote?
+>>> second of type blockquote?
+>>>> third of type blockquote?
+
+## pre
+
+<pre>pre</pre>
+
+## code
+
+### inline
+
+`code`
+
+### block
+
+```js
+console.log('t')
+```
+
+### block with meta
+
+```js filename="index.js" line=1,2-3
+import path from 'path'
+
+console.log('t')
+```
+
+```ts filename="test.js" line=1-2,3,4,5
+import { styled } from '@stitches/react';
+import * as Accordion from '@radix-ui/react-accordion';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
+
+const AccordionChevron = styled(ChevronDownIcon, {
+  transition: 'transform 300ms',
+  '[data-state=open] &': { transform: 'rotate(180deg)' },
+});
+
+export default () => (
+  <Accordion.Root type="single">
+    <Accordion.Item value="item-1">
+      <Accordion.Header>
+        <Accordion.Trigger>
+          <span>Trigger text</span>
+          <AccordionChevron aria-hidden />
+        </Accordion.Trigger>
+      </Accordion.Header>
+      <Accordion.Content>…</Accordion.Content>
+    </Accordion.Item>
+  </Accordion.Root>
+);
+```
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.

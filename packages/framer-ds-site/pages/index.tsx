@@ -14,28 +14,28 @@ import {
 
 const menus = [
   {
-    href: '/design-system',
+    slug: '/design-system',
     title: 'Design System',
     description: 'All components of design system.',
     draft: false,
   },
   {
-    href: '/colors',
+    slug: '/colors',
     title: 'Color System',
     description: 'A color system of design system.',
     draft: false,
   },
   {
-    href: '/docs',
+    slug: '/docs',
     title: 'Documentation',
     description: 'A complete documentaion of design system.',
     draft: false,
   },
   {
-    href: '/',
-    title: 'Empty',
-    description: 'Coming soon.',
-    draft: true,
+    slug: '/mdx',
+    title: 'MDX',
+    description: 'MDX Components of design system.',
+    draft: false,
   },
 ]
 
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
             }}
           >
             {menus.map((menu) => (
-              <NextLink key={menu.href} href={menu.href} passHref>
+              <NextLink key={menu.slug} href={menu.slug} passHref>
                 <Card as="a" variant="ghost">
                   <Box css={{ p: '$space20' }}>
                     <Heading

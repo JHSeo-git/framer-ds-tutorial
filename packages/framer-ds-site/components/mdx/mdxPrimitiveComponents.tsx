@@ -9,42 +9,66 @@ const mdxPrimitiveComponents: ComponentMap = {
   // HEADING
   h1: ({ children, ...props }) => {
     return (
-      <FDS.Heading {...props} size="h1" css={{ mb: '$space20' }}>
+      <FDS.Heading
+        {...props}
+        size="h1"
+        css={{ mt: '$space25', mb: '$space20' }}
+      >
         {children}
       </FDS.Heading>
     )
   },
   h2: ({ children, ...props }) => {
     return (
-      <FDS.Heading {...props} size="h2" css={{ mb: '$space20' }}>
+      <FDS.Heading
+        {...props}
+        size="h2"
+        css={{ mt: '$space25', mb: '$space20' }}
+      >
         {children}
       </FDS.Heading>
     )
   },
   h3: ({ children, ...props }) => {
     return (
-      <FDS.Heading {...props} size="h3" css={{ mb: '$space20' }}>
+      <FDS.Heading
+        {...props}
+        size="h3"
+        css={{ mt: '$space25', mb: '$space20' }}
+      >
         {children}
       </FDS.Heading>
     )
   },
   h4: ({ children, ...props }) => {
     return (
-      <FDS.Heading {...props} size="h4" css={{ mb: '$space20' }}>
+      <FDS.Heading
+        {...props}
+        size="h4"
+        css={{ mt: '$space25', mb: '$space20' }}
+      >
         {children}
       </FDS.Heading>
     )
   },
   h5: ({ children, ...props }) => {
     return (
-      <FDS.Heading {...props} size="h5" css={{ mb: '$space15' }}>
+      <FDS.Heading
+        {...props}
+        size="h5"
+        css={{ mt: '$space20', mb: '$space15' }}
+      >
         {children}
       </FDS.Heading>
     )
   },
   h6: ({ children, ...props }) => {
     return (
-      <FDS.Heading {...props} size="h6" css={{ mb: '$space15' }}>
+      <FDS.Heading
+        {...props}
+        size="h6"
+        css={{ mt: '$space20', mb: '$space15' }}
+      >
         {children}
       </FDS.Heading>
     )
@@ -56,7 +80,7 @@ const mdxPrimitiveComponents: ComponentMap = {
       <FDS.Text
         {...props}
         as="p"
-        css={{ position: 'relative', mb: '$space15' }}
+        css={{ position: 'relative', mt: '$space15', mb: '$space15' }}
       >
         {children}
       </FDS.Text>
@@ -78,7 +102,15 @@ const mdxPrimitiveComponents: ComponentMap = {
   },
   span: ({ children, ...props }) => {
     return (
-      <FDS.Text {...props} as="span" css={{ display: 'inline' }}>
+      <FDS.Text
+        {...props}
+        as="span"
+        css={{
+          display: 'inline',
+          fontSize: 'inherit',
+          lineHeight: '1.5',
+        }}
+      >
         {children}
       </FDS.Text>
     )
@@ -115,7 +147,7 @@ const mdxPrimitiveComponents: ComponentMap = {
     )
   },
 
-  // HR
+  // hr
   hr: (props) => {
     return (
       <FDS.Separator
@@ -149,6 +181,7 @@ const mdxPrimitiveComponents: ComponentMap = {
       <FDS.Box
         as="ol"
         css={{
+          mt: '$space10',
           mb: '$space20',
           color: '$hiContrast',
         }}
@@ -251,7 +284,6 @@ const mdxPrimitiveComponents: ComponentMap = {
 
   // code
   code: ({ children, ...props }) => {
-    console.log({ props })
     if (!Object.keys(props).includes('className')) {
       return (
         <FDS.Code {...props} css={{ whiteSpace: 'break-spaces' }}>
@@ -261,7 +293,6 @@ const mdxPrimitiveComponents: ComponentMap = {
     }
     return <CodeBlock {...(props as any)}>{children}</CodeBlock>
   },
-  //
 }
 
 export default mdxPrimitiveComponents

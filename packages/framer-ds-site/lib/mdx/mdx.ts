@@ -2,6 +2,7 @@ import path from 'path'
 import glob from 'glob'
 import matter from 'gray-matter'
 import fsPrmoise from 'fs/promises'
+import remarkGfm from 'remark-gfm'
 import remarkSlug from 'remark-slug'
 import readingTime from 'reading-time'
 import { bundleMDXFile } from 'mdx-bundler'
@@ -42,6 +43,7 @@ export const getMdxBySlug = async (targetPath: string, slug: string) => {
       options.remarkPlugins = [
         ...(options.remarkPlugins ?? []),
         // remark plugins
+        remarkGfm,
         remarkSlug,
       ]
       options.rehypePlugins = [

@@ -1,4 +1,4 @@
-import { Box, Pre } from '@framerds/react'
+import { Box, Code, Pre } from '@framerds/react'
 import { useEffect, useRef, useState } from 'react'
 
 export type CodeBlockProps = {
@@ -16,7 +16,6 @@ const CodeBlock = ({
   line,
   id,
 }: CodeBlockProps) => {
-  console.log(className, filename, line)
   const [code, setCode] = useState<string | undefined>(undefined)
   const [hasCopied, setHasCopied] = useState(false)
   const preRef = useRef<HTMLPreElement>(null)
@@ -70,7 +69,7 @@ const CodeBlock = ({
             bs: 'none',
           }}
         >
-          {children}
+          <Code variant="inherit">{children}</Code>
         </Pre>
       </Box>
     </Box>
