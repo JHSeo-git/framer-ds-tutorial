@@ -10,6 +10,7 @@ import {
   Text,
   Heading,
   Image,
+  Code,
 } from '@framerds/react'
 import Layout from '@components/Layout'
 
@@ -19,7 +20,7 @@ const DesignSystemPagePage: NextPage = () => {
       <Section>
         <Container>
           <Heading
-            size="h1"
+            size="h2"
             color="grayScale"
             css={{
               mb: '$space20',
@@ -167,7 +168,7 @@ const DesignSystemPagePage: NextPage = () => {
       <Section>
         <Container>
           <Heading
-            size="h1"
+            size="h2"
             color="grayScale"
             css={{
               mb: '$space20',
@@ -192,7 +193,7 @@ const DesignSystemPagePage: NextPage = () => {
       <Section>
         <Container>
           <Heading
-            size="h1"
+            size="h2"
             color="grayScale"
             css={{
               mb: '$space20',
@@ -225,7 +226,7 @@ const DesignSystemPagePage: NextPage = () => {
       <Section>
         <Container>
           <Heading
-            size="h1"
+            size="h2"
             color="grayScale"
             css={{
               mb: '$space20',
@@ -328,7 +329,7 @@ const DesignSystemPagePage: NextPage = () => {
       <Section>
         <Container>
           <Heading
-            size="h1"
+            size="h2"
             color="grayScale"
             css={{
               mb: '$space20',
@@ -365,6 +366,81 @@ const DesignSystemPagePage: NextPage = () => {
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
           </Flex>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Heading
+            size="h2"
+            color="grayScale"
+            css={{
+              mb: '$space20',
+            }}
+          >
+            Box Shadow
+          </Heading>
+          <Flex wrap="wrap" gap="xl" css={{ mb: '$space20' }}>
+            <Box
+              css={{
+                bs: '$muiShadow1',
+                height: '8rem',
+                aspectRatio: 1,
+              }}
+            />
+            <Box
+              css={{
+                bs: '$muiShadow2',
+                height: '8rem',
+                aspectRatio: 1,
+              }}
+            />
+            <Box
+              css={{
+                bs: '$muiShadow3',
+                height: '8rem',
+                aspectRatio: 1,
+              }}
+            />
+            <Box
+              css={{
+                bs: '$muiShadow4',
+                height: '8rem',
+                aspectRatio: 1,
+              }}
+            />
+          </Flex>
+          <Flex wrap="wrap" gap="xl">
+            <Box
+              css={{
+                bs: '$shadow4',
+                height: '8rem',
+                aspectRatio: 1,
+              }}
+            />
+            <Box
+              css={{
+                bs: '$shadow5',
+                height: '8rem',
+                aspectRatio: 1,
+              }}
+            />
+          </Flex>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Heading
+            size="h2"
+            color="grayScale"
+            css={{
+              mb: '$space20',
+            }}
+          >
+            Code
+          </Heading>
+          <Text as="p">
+            Inline Code Element is <Code>Inline Code</Code>
+          </Text>
         </Container>
       </Section>
     </Layout>
