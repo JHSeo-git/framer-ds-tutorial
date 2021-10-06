@@ -198,32 +198,45 @@ const DesignSystemPagePage: NextPage = () => {
               mb: '$space20',
             }}
           >
-            Text
+            Heading
           </Heading>
-          <Flex direction="column" gap="xl" css={{ mb: '$space20' }}>
-            <Heading size="h1" css={{ color: '$mono900' }}>
+          <Flex direction="column" gap="lg" css={{ mb: '$space20' }}>
+            <Heading size="h1" css={{ color: '$mono11' }}>
               Heading 1
             </Heading>
-            <Heading size="h2" css={{ color: '$mono900' }}>
+            <Heading size="h2" css={{ color: '$mono11' }}>
               Heading 2
             </Heading>
-            <Heading size="h3" css={{ color: '$mono900' }}>
+            <Heading size="h3" css={{ color: '$mono11' }}>
               Heading 3
             </Heading>
-            <Heading size="h4" css={{ color: '$mono900' }}>
+            <Heading size="h4" css={{ color: '$mono11' }}>
               Heading 4
             </Heading>
-            <Heading size="h5" css={{ color: '$mono900' }}>
+            <Heading size="h5" css={{ color: '$mono11' }}>
               Heading 5
             </Heading>
-            <Heading size="h6" css={{ color: '$mono900' }}>
+            <Heading size="h6" css={{ color: '$mono11' }}>
               Heading 6
             </Heading>
           </Flex>
-          <Flex direction="column" gap="xl" css={{ mb: '$space20' }}>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Heading
+            size="h1"
+            color="grayScale"
+            css={{
+              mb: '$space20',
+            }}
+          >
+            Text - gradient color
+          </Heading>
+          <Flex direction="column" gap="lg" css={{ mb: '$space20' }}>
             <Text
               as="h2"
-              size="5xl"
+              size="4xl"
               color="primary"
               gradient
               css={{
@@ -234,7 +247,7 @@ const DesignSystemPagePage: NextPage = () => {
             </Text>
             <Text
               as="h2"
-              size="5xl"
+              size="4xl"
               color="secondary"
               gradient
               css={{
@@ -245,7 +258,7 @@ const DesignSystemPagePage: NextPage = () => {
             </Text>
             <Text
               as="h2"
-              size="5xl"
+              size="4xl"
               color="teritary"
               gradient
               css={{
@@ -256,7 +269,7 @@ const DesignSystemPagePage: NextPage = () => {
             </Text>
             <Text
               as="h2"
-              size="5xl"
+              size="4xl"
               color="success"
               gradient
               css={{
@@ -267,7 +280,7 @@ const DesignSystemPagePage: NextPage = () => {
             </Text>
             <Text
               as="h2"
-              size="5xl"
+              size="4xl"
               color="warning"
               gradient
               css={{
@@ -278,7 +291,7 @@ const DesignSystemPagePage: NextPage = () => {
             </Text>
             <Text
               as="h2"
-              size="5xl"
+              size="4xl"
               color="error"
               gradient
               css={{
@@ -287,27 +300,68 @@ const DesignSystemPagePage: NextPage = () => {
             >
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
+            <Text
+              as="h2"
+              size="4xl"
+              color="blue"
+              gradient
+              css={{
+                WebkitBackgroundClip: 'text',
+              }}
+            >
+              Code generation, like drinking alcohol, is good in moderation.
+            </Text>
+            <Text
+              as="h2"
+              size="4xl"
+              color="yellow"
+              gradient
+              css={{
+                WebkitBackgroundClip: 'text',
+              }}
+            >
+              Code generation, like drinking alcohol, is good in moderation.
+            </Text>
           </Flex>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Heading
+            size="h1"
+            color="grayScale"
+            css={{
+              mb: '$space20',
+            }}
+          >
+            Text - color
+          </Heading>
           <Flex direction="column" gap="lg">
-            <Text as="p" color="grayScale">
+            <Text as="p" size="lg" color="grayScale">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
-            <Text as="p" color="primary">
+            <Text as="p" size="lg" color="primary">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
-            <Text as="p" color="secondary">
+            <Text as="p" size="lg" color="secondary">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
-            <Text as="p" color="teritary">
+            <Text as="p" size="lg" color="teritary">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
-            <Text as="p" color="success">
+            <Text as="p" size="lg" color="success">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
-            <Text as="p" color="warning">
+            <Text as="p" size="lg" color="warning">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
-            <Text as="p" color="error">
+            <Text as="p" size="lg" color="error">
+              Code generation, like drinking alcohol, is good in moderation.
+            </Text>
+            <Text as="p" size="lg" color="blue">
+              Code generation, like drinking alcohol, is good in moderation.
+            </Text>
+            <Text as="p" size="lg" color="yellow">
               Code generation, like drinking alcohol, is good in moderation.
             </Text>
           </Flex>
