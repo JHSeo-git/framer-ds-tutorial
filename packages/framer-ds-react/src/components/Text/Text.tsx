@@ -132,6 +132,12 @@ const BaseText = styled('span', {
       error: {
         color: '$error11',
       },
+      blue: {
+        color: '$blue11',
+      },
+      yellow: {
+        color: '$yellow11',
+      },
     },
     gradient: {
       true: {
@@ -189,6 +195,20 @@ const BaseText = styled('span', {
       gradient: 'true',
       css: {
         background: 'linear-gradient(to right, $error11, $warning11)',
+      },
+    },
+    {
+      color: 'blue',
+      gradient: 'true',
+      css: {
+        background: 'linear-gradient(to right, $blue11, $yellow11)',
+      },
+    },
+    {
+      color: 'yellow',
+      gradient: 'true',
+      css: {
+        background: 'linear-gradient(to right, $yellow11, $blue11)',
       },
     },
   ],
