@@ -11,33 +11,7 @@ import {
   Section,
   Text,
 } from '@framerds/react'
-
-const menus = [
-  {
-    slug: '/design-system',
-    title: 'Design System',
-    description: 'All components of design system.',
-    draft: false,
-  },
-  {
-    slug: '/colors',
-    title: 'Color System',
-    description: 'A color system of design system.',
-    draft: false,
-  },
-  {
-    slug: '/docs',
-    title: 'Documentation',
-    description: 'A complete documentaion of design system.',
-    draft: false,
-  },
-  {
-    slug: '/mdx',
-    title: 'MDX',
-    description: 'MDX Components of design system.',
-    draft: false,
-  },
-]
+import { appMenusRoutes } from '@lib/config/appMenusRoutes'
 
 const Home: NextPage = () => {
   return (
@@ -88,7 +62,7 @@ const Home: NextPage = () => {
               },
             }}
           >
-            {menus.map((menu) => (
+            {appMenusRoutes.map((menu) => (
               <NextLink key={menu.slug} href={menu.slug} passHref>
                 <Card as="a" variant="ghost">
                   <Box css={{ p: '$space20' }}>
