@@ -153,7 +153,10 @@ const mdxPrimitiveComponents: ComponentMap = {
       <FDS.Separator
         direction="horizontal"
         size="max"
-        css={{ my: '$space45' }}
+        css={{
+          my: '$space45',
+          bc: '$primary7',
+        }}
         {...props}
       />
     )
