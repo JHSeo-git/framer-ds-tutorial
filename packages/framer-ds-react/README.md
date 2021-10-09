@@ -67,54 +67,55 @@ theme을 포함한 stitches 스타일을 만들며 외부에서 쓸 darkModeClas
 5. Avatar
 6. Badge
 7. Banner
-8. Box
-9. Button
-10. Card
+8. Box -
+9. Button -
+10. Card -
 11. Checkbox
-12. Code
-13. Container
+12. Code -
+13. Container -
 14. ContextMenu
 15. ControlGroup
 16. Dialog
 17. DropdownMenu
-18. Flex
-19. Grid
-20. Heading
+18. Flex -
+19. Grid -
+20. Heading -
 21. IconButton
-22. Image
+22. Image -
 23. Kbd
 24. Label
-25. Link
+25. Link -
 26. Menu
 27. Overlay
 28. Panel
-29. Paragraph
-30. Popover
-31. ProgressBar
-32. Radio
-33. RadioCard
-34. RadioGrid
-35. Scrollbar
-36. Section
-37. Select
-38. Separator
-39. Sheet
-40. SimpleToggle
-41. Skeleton
-42. Slider
-43. Status
-44. Sub
-45. Sup
-46. Switch
-47. TabLink
-48. Table
-49. Tabs
-50. Text
-51. TextArea
-52. TextField
-53. Tooltip
-54. TreeItem
-55. VerifiedBadge
+29. Paragraph -
+30. Pre -
+31. Popover
+32. ProgressBar
+33. Radio
+34. RadioCard
+35. RadioGrid
+36. Scrollbar
+37. Section -
+38. Select
+39. Separator -
+40. Sheet
+41. SimpleToggle
+42. Skeleton
+43. Slider
+44. Status
+45. Sub
+46. Sup
+47. Switch
+48. TabLink
+49. Table
+50. Tabs
+51. Text -
+52. TextArea
+53. TextField
+54. Tooltip
+55. TreeItem
+56. VerifiedBadge
 
 ## 작업 우선순위
 
