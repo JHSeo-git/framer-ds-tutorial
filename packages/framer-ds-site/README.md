@@ -13,11 +13,11 @@
 
 # mdx-bundler plugin
 
-remark: markdown parsable plugin
-rehype: html parseable plugin
+remark: markdown parsing plugin
+rehype: html parsing plugin
 
 markdown파일에 plugin을 적용하기 위해선 remark plugin을 사용해야 하며
 markdown파일에 rehype plugin을 적용하기 위해선 markdown을 html로 변환된 뒤에 적용 가능하다.
 
 - remark-slug: add id at markdown's heading element
-- remark-mdx-code-meta: using markdown code block metadata
+- rehype-meta-attribute: using markdown code block metadata
