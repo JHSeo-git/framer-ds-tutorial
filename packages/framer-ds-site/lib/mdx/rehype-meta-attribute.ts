@@ -2,12 +2,12 @@
  * @see https://github.com/radix-ui/website/blob/main/lib/rehype-meta-attribute.js
  */
 
-import visit from 'unist-util-visit'
+import { visit } from 'unist-util-visit'
 
 var re = /\b([-\w]+)(?:=(?:"([^"]*)"|'([^']*)'|([^"'\s]+)))?/g
 
 const rehypeMetaAttribute = (options = {}) => {
-  return (tree: Parameters<typeof visit>[0]) => {
+  return (tree: any) => {
     visit(tree, 'element', onelement)
   }
 

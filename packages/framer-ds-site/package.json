@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "deb:debug": "NODE_OPTIONS='--inspect' next dev",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,8 +12,6 @@
   "dependencies": {
     "@framerds/react": "0.0.1",
     "@mapbox/rehype-prism": "^0.8.0",
-    "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^11.1.2",
     "esbuild": "^0.13.3",
     "glob": "^7.2.0",
     "gray-matter": "^4.0.3",
@@ -26,7 +24,8 @@
     "reading-time": "^1.5.0",
     "recoil": "^0.4.1",
     "remark-gfm": "^3.0.0",
-    "remark-slug": "^7.0.0"
+    "remark-slug": "^7.0.0",
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
     "@types/glob": "^7.1.4",
