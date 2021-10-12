@@ -1,11 +1,16 @@
 # Framer Design System tutorial
 
+Design System practice project by [Framer](https://www.framer.com/) & [Stitches.js](https://stitches.dev/)
+
+## Packages
+
+- framer-ds-react: React components made by framer and stitches.js
+- framer-ds-site: Test website made by framer-ds-react (will be removed)
+
+## Diary
+
 > **[Proejct Diary](https://flat-drill-eca.notion.site/4f33b7c02808483d938bd8976831c414)**
 
-돌고 돌아 Framer!
+## LICENSE
 
-# packages
-
-- framer-ds-react: react components
-- framer-ds-site: 디자인 시스템 웹사이트용
-- framer-ds.framerfx: 프레이머 sync용 framerfx node 프로젝트
+MIT
