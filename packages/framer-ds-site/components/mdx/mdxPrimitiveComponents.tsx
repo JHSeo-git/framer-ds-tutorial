@@ -6,7 +6,7 @@ import React from 'react'
 import CodeBlock from '@components/CodeBlock'
 
 const mdxPrimitiveComponents: ComponentMap = {
-  // HEADING
+  // heading
   h1: ({ children, ...props }) => {
     return (
       <FDS.Heading
@@ -74,7 +74,7 @@ const mdxPrimitiveComponents: ComponentMap = {
     )
   },
 
-  // TEXT
+  // paragraph
   p: ({ children, ...props }) => {
     return (
       <FDS.Text
@@ -116,7 +116,7 @@ const mdxPrimitiveComponents: ComponentMap = {
     )
   },
 
-  // Anchor
+  // anchor
   a: ({ href = '', children, ...props }: React.ComponentPropsWithRef<'a'>) => {
     if (href.startsWith('http')) {
       return (
@@ -295,6 +295,11 @@ const mdxPrimitiveComponents: ComponentMap = {
       )
     }
     return <CodeBlock {...(props as any)}>{children}</CodeBlock>
+  },
+
+  // table
+  table: ({ children, ...props }) => {
+    return <>{children}</>
   },
 }
 

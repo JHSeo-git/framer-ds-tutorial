@@ -53,6 +53,7 @@
     "clean": "rimraf ./dist",
     "prepare": "ts-patch install -s",
     "tsc:type": "tsc",
-    "build": "yarn clean && rollup -c rollup.config.js && yarn tsc:type"
+    "build": "yarn clean && rollup -c rollup.config.js && yarn tsc:type",
+    "dev": "rollup -c rollup.config.js --watch"
   }
 }
